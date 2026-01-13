@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>시스템 로그인</title>
+    <style>
+        body { background-color: #1a1a1a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; }
+        .login-box { background: #2b2b2b; padding: 40px; border-radius: 10px; text-align: center; width: 300px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid #444; }
+        h1 { margin-bottom: 30px; color: #4CAF50; font-size: 24px; }
+        input { width: 90%; padding: 12px; margin-bottom: 15px; background: #444; border: 1px solid #555; color: white; border-radius: 4px; box-sizing: border-box; }
+        input:focus { outline: none; border-color: #4CAF50; }
+        button { width: 100%; padding: 12px; background: #4CAF50; border: none; color: white; font-weight: bold; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        button:hover { background: #45a049; }
+        .flash-msg { color: #ff5252; margin-bottom: 15px; font-size: 14px; }
+        
+        /* 회원가입 링크 스타일 */
+        .links { margin-top: 20px; font-size: 14px; }
+        .links a { color: #aaa; text-decoration: none; margin: 0 10px; }
+        .links a:hover { color: white; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>🔐 Control Access</h1>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash-msg">{{ messages[0] }}</div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="/login">
+            <input type="text" name="username" placeholder="관리자 ID" required>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            <button type="submit">시스템 접속</button>
+        </form>
+
+        <div class="links">
+            <a href="/signup">새 관리자 등록 (Sign Up)</a>
+        </div>
+    </div>
+</body>
+</html>

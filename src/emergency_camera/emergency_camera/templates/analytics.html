@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시스템 데이터 분석 | Analytics</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        /* [1] 전체 레이아웃 & 다크 테마 */
+        body { 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            font-family: 'Pretendard', sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            box-sizing: border-box; 
+        }
+        
+        /* [2] 헤더 스타일 */
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 3px solid #2196F3; /* 분석 테마 컬러 (파랑) */
+            padding-bottom: 15px; 
+            margin-bottom: 20px; 
+            flex-shrink: 0;
+        }
+        .header h1 { margin: 0; color: white; font-size: 24px; } 
+        .header h1 span { color: #2196F3; }
+        
+        /* 뒤로가기 버튼 */
+        .btn-back { 
+            background: #444; 
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            transition: 0.3s; 
+            font-size: 14px;
+        }
+        .btn-back:hover { background: #666; }
+
+        /* [3] 차트 레이아웃 (Grid) */
+        .dashboard-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 2fr; /* 1:2 비율 */
+            gap: 20px; 
+            height: 45%; 
+            margin-bottom: 20px; 
+            min-height: 0;
+        }
+        
+        /* 카드 공통 스타일 */
+        .card { 
+            background: #1e1e1e; 
+            border: 1px solid #333; 
+            border-radius: 10px; 
+            padding: 15px; 
+            display: flex; 
+            flex-direction: column; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .card-title { 
+            font-weight: bold; 
+            margin-bottom: 15px; 
+            color: #90caf9; 
+            font-size: 16px; 
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        /* 캔버스 컨테이너 (반응형 차트 필수) */
+        .chart-box { 
+            flex: 1; 
+            position: relative; 
+            width: 100%; 
+            height: 100%; 
+            min-height: 0;
+        }
+
+        /* [4] 하단 테이블 영역 */
+        .table-container { 
+            flex: 1; 
+            background: #1e1e1e; 
+            border: 1px solid #333; 
+            border-radius: 10px; 
+            padding: 15px; 
+            overflow: hidden; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 0;
+        }
+        
+        .table-wrapper { 
+            overflow-y: auto; 
+            flex: 1; 
+            margin-top: 5px;
+        }
+        
+        /* 테이블 스타일 */
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        
+        th { 
+            background: #2c2c2c; 
+            padding: 12px; 
+            color: #2196F3; 
+            position: sticky; 
+            top: 0; 
+            z-index: 10;
+            font-weight: bold;
+        }
+        
+        td { 
+            padding: 10px; 
+            border-bottom: 1px solid #333; 
+            color: #ccc; 
+            font-size: 13px; 
+        }
+        
+        tr:hover { background: #252525; transition: 0.2s; }
+        
+        /* 스크롤바 커스텀 */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>📊 시스템 <span>데이터 분석실 (Analytics)</span></h1>
+        <a href="/dashboard" class="btn-back">🔙 관제 화면으로 돌아가기</a>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <div class="card-title">🤖 로봇별 작업 점유율 (Work Share)</div>
+            <div class="chart-box">
+                <canvas id="robotPieChart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">📈 시간대별 시스템 활동량 (Hourly Traffic)</div>
+            <div class="chart-box">
+                <canvas id="timeLineChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <div class="card-title">📝 상세 로그 데이터베이스 (최신 100건)</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">ID</th>
+                        <th style="width: 25%;">발생 시간 (Timestamp)</th>
+                        <th>로그 내용 (Event Message)</th>
+                    </tr>
+                </thead>
+                <tbody id="log-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // 차트 객체를 저장할 변수 (갱신 시 삭제 후 재생성을 위해 필요)
+        let pieChart = null;
+        let lineChart = null;
+
+        // API 데이터 가져오기 함수
+        async function fetchData() {
+            try {
+                const res = await fetch('/api/analytics/data');
+                const data = await res.json();
+                
+                updateCharts(data);
+                updateTable(data.logs);
+            } catch (error) {
+                console.error("데이터 로딩 실패:", error);
+            }
+        }
+
+        // 차트 그리기/갱신 함수
+        function updateCharts(data) {
+            // --- 1. 파이 차트 (로봇 점유율) ---
+            const ctxPie = document.getElementById('robotPieChart').getContext('2d');
+            
+            // 기존 차트가 있으면 삭제 (중복 렌더링 방지)
+            if (pieChart) pieChart.destroy();
+            
+            pieChart = new Chart(ctxPie, {
+                type: 'doughnut',
+                data: {
+                    labels: ['ROBOT 3 (Blue)', 'ROBOT 5 (Red)'],
+                    datasets: [{
+                        data: data.pie_data, // 서버에서 받은 데이터 [r3_count, r5_count]
+                        backgroundColor: ['#4dabf7', '#ff6b6b'], // 파랑, 빨강
+                        borderColor: '#1e1e1e',
+                        borderWidth: 2
+                    }]
+                },
+                options: { 
+                    responsive: true, 
+                    maintainAspectRatio: false, 
+                    plugins: { 
+                        legend: { position: 'bottom', labels: { color: '#e0e0e0', font: { size: 12 } } } 
+                    } 
+                }
+            });
+
+            // --- 2. 라인 차트 (시간대별 활동) ---
+            const ctxLine = document.getElementById('timeLineChart').getContext('2d');
+            
+            if (lineChart) lineChart.destroy();
+
+            lineChart = new Chart(ctxLine, {
+                type: 'line',
+                data: {
+                    labels: data.line_data.labels, // 시간대 라벨 (14시, 15시...)
+                    datasets: [{
+                        label: '이벤트 발생 수',
+                        data: data.line_data.values, // 발생 횟수 데이터
+                        borderColor: '#00e676', // 초록색 라인
+                        backgroundColor: 'rgba(0, 230, 118, 0.1)', // 라인 아래 채우기 색
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4, // 부드러운 곡선
+                        pointBackgroundColor: '#fff',
+                        pointRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true, 
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { 
+                            ticks: { color: '#bbb' }, 
+                            grid: { color: '#333' } 
+                        },
+                        y: { 
+                            ticks: { color: '#bbb', beginAtZero: true, stepSize: 1 }, 
+                            grid: { color: '#333' } 
+                        }
+                    },
+                    plugins: { 
+                        legend: { labels: { color: '#e0e0e0' } } 
+                    }
+                }
+            });
+        }
+
+        // 테이블 업데이트 함수
+        function updateTable(logs) {
+            const tbody = document.getElementById('log-table-body');
+            // map 함수로 HTML 문자열 생성 후 삽입
+            tbody.innerHTML = logs.map(log => `
+                <tr>
+                    <td>${log[0]}</td>
+                    <td style="color:#ffb74d; font-family: monospace;">${log[2]}</td>
+                    <td>${log[1]}</td>
+                </tr>
+            `).join('');
+        }
+
+        // 초기 실행 및 3초마다 자동 갱신
+        fetchData();
+        setInterval(fetchData, 3000);
+    </script>
+</body>
+</html>

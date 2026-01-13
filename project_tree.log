@@ -1,0 +1,1424 @@
+.
+├── ./aed_request.mp3
+├── ./emergency_alert.mp3
+├── ./map.pgm
+├── ./maps
+│   ├── ./maps/map.pgm
+│   └── ./maps/map.yaml
+├── ./map.yaml
+├── ./project_tree.log
+└── ./src
+    ├── ./src/AEDbot
+    │   └── ./src/AEDbot/asd.txt
+    ├── ./src/captures
+    ├── ./src/comparison_mAP50-95.png
+    ├── ./src/comparison_mAP50.png
+    ├── ./src/comparison_Recall.png
+    ├── ./src/comparison_result
+    │   ├── ./src/comparison_result/original_capture_cam2.jpg
+    │   └── ./src/comparison_result/original_capture_cam4.jpg
+    ├── ./src/comparison_result_env_match
+    │   ├── ./src/comparison_result_env_match/original_capture_cam0.jpg
+    │   └── ./src/comparison_result_env_match/original_capture_cam2.jpg
+    ├── ./src/control_pkg
+    │   ├── ./src/control_pkg/control_pkg
+    │   │   ├── ./src/control_pkg/control_pkg/control_debugger.py
+    │   │   ├── ./src/control_pkg/control_pkg/control_node.py
+    │   │   ├── ./src/control_pkg/control_pkg/dummy.py
+    │   │   ├── ./src/control_pkg/control_pkg/__init__.py
+    │   │   ├── ./src/control_pkg/control_pkg/__pycache__
+    │   │   │   ├── ./src/control_pkg/control_pkg/__pycache__/control_debugger.cpython-310.pyc
+    │   │   │   ├── ./src/control_pkg/control_pkg/__pycache__/control_node.cpython-310.pyc
+    │   │   │   ├── ./src/control_pkg/control_pkg/__pycache__/__init__.cpython-310.pyc
+    │   │   │   └── ./src/control_pkg/control_pkg/__pycache__/test.cpython-310.pyc
+    │   │   └── ./src/control_pkg/control_pkg/test.py
+    │   ├── ./src/control_pkg/package.xml
+    │   ├── ./src/control_pkg/resource
+    │   │   └── ./src/control_pkg/resource/control_pkg
+    │   ├── ./src/control_pkg/setup.cfg
+    │   ├── ./src/control_pkg/setup.py
+    │   └── ./src/control_pkg/test
+    │       ├── ./src/control_pkg/test/test_copyright.py
+    │       ├── ./src/control_pkg/test/test_flake8.py
+    │       └── ./src/control_pkg/test/test_pep257.py
+    ├── ./src/emergency_camera
+    │   ├── ./src/emergency_camera/emergency_camera
+    │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/data.yaml
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/README.dataset.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/README.roboflow.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/cam2_20251231_100057_jpg.rf.6d8fbe6da07c30fa28c88bd311bca6af.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-21-30_png.rf.de92ad1636ae764b8be4133357500c78.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-24-26_png.rf.7ac84145e5a1bb7ba852d8bc126cc698.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-27-16_png.rf.da06cf61c05c943d7478a4318ec44d11.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-27-39_png.rf.4207fbfea5c3139ee06ae94897f53e50.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-32-45_png.rf.a1b72dae4bf70a19b39b7ff3ac8d1f05.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-34-18_png.rf.56f44db384836f7c015f9ef4023ade3e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-43-33_png.rf.0aab0f747d33304c6a370daa6465f20e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-50-30_png.rf.e9a2f137bd13df505cdf2cc0922a7d19.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-50-46_png.rf.3b6e92ba8b5384da326b4c6192735401.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-19-50-50_png.rf.08ba787ae31a2427e358af0c619e382f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-00-30_png.rf.8af5a93ecf780061327788ac45d05320.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-00-37_png.rf.1ad469cdbac5a5548fce8f96e0732a3f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-01-54_png.rf.fe9a221476c068cf140bb694894c6ddd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-03-36_png.rf.495b9494fc87695a4caffda4cd29aabc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-04-36_png.rf.628066d385b6c4c71b5d90139f3e892e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-05-24_png.rf.a9e3b04e92ecb2e4a0a832cacd8e567c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-06-43_png.rf.28326845d2dcf6085827b538ac98b2ef.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-20-58-41_png.rf.b451e3779330c92ffd6f4fb30d9fb078.jpg
+    │   │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/test/images/Screenshot-from-2025-12-30-21-08-26_png.rf.8ed53dd197df74ccee02035d18ff7b66.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/cam2_20251231_100057_jpg.rf.6d8fbe6da07c30fa28c88bd311bca6af.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-21-30_png.rf.de92ad1636ae764b8be4133357500c78.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-24-26_png.rf.7ac84145e5a1bb7ba852d8bc126cc698.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-27-16_png.rf.da06cf61c05c943d7478a4318ec44d11.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-27-39_png.rf.4207fbfea5c3139ee06ae94897f53e50.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-32-45_png.rf.a1b72dae4bf70a19b39b7ff3ac8d1f05.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-34-18_png.rf.56f44db384836f7c015f9ef4023ade3e.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-43-33_png.rf.0aab0f747d33304c6a370daa6465f20e.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-50-30_png.rf.e9a2f137bd13df505cdf2cc0922a7d19.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-50-46_png.rf.3b6e92ba8b5384da326b4c6192735401.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-19-50-50_png.rf.08ba787ae31a2427e358af0c619e382f.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-00-30_png.rf.8af5a93ecf780061327788ac45d05320.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-00-37_png.rf.1ad469cdbac5a5548fce8f96e0732a3f.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-01-54_png.rf.fe9a221476c068cf140bb694894c6ddd.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-03-36_png.rf.495b9494fc87695a4caffda4cd29aabc.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-04-36_png.rf.628066d385b6c4c71b5d90139f3e892e.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-05-24_png.rf.a9e3b04e92ecb2e4a0a832cacd8e567c.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-06-43_png.rf.28326845d2dcf6085827b538ac98b2ef.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-20-58-41_png.rf.b451e3779330c92ffd6f4fb30d9fb078.txt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/251230_detection-2/test/labels/Screenshot-from-2025-12-30-21-08-26_png.rf.8ed53dd197df74ccee02035d18ff7b66.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_090651_jpg.rf.f68d0e065b0711c918aea62677f60454.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_090652_jpg.rf.dd8e61279d45cd2c4d3ac9288f1f9f59.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_090733_jpg.rf.401c257e5dbe882d341bdafb3b470fdc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_090742_jpg.rf.36c0bd3add981f5349eecc71f59ec0eb.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_090927_jpg.rf.88cc728e65c3b62e838c29b31cf86ec1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_090946_jpg.rf.1962048e14ef6d15b94c00f57c02479c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091050_jpg.rf.d8b72a3c380581db2d37fa5751a912b9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091101_jpg.rf.db0a95fcea29a88d7787f66dc3fb4c5c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091111_jpg.rf.bf3437408799d04d7116fb614161c5c1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091126_jpg.rf.9a87fb31b97ca8e8acefd8662ada65ed.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091327_jpg.rf.6945aebeb185ab3efc211f3e1c58c1ff.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091329_jpg.rf.e935eb501d75bd32a9e3892e5db46196.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091337_jpg.rf.c0e50ebe3178c5b46a88bf0022b87a97.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091339_jpg.rf.86dbb36ec690aadcd4039975dbb2b305.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091349_jpg.rf.5b04ee1d751797f778a09d8e71ea6ef9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091414_jpg.rf.d947435984773dceec6c00d8f49a31e3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091617_jpg.rf.4b430ce060290d87b46a0e834c5874dd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091639_jpg.rf.3171083dcbda9cdcbb17f0a4ed085634.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091704_jpg.rf.2940406bbc5da46a8dd3a5e7545a3036.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091735_jpg.rf.f974ae0d3de5e76c47d4839a6938cf4a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091738_jpg.rf.4e7cec859d687466b713c7c0adb8f583.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091808_jpg.rf.ca75ece3ee14a129861fc40927b6ffe3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091811_jpg.rf.68800a1731eabeffe57ce10e1f83827c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_091853_jpg.rf.bce7073bc149c0e2f67e55d30253911e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092315_jpg.rf.99e9463199f67ee12980ecaf45dfb675.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092411_jpg.rf.51a8c57c429ea67ec01c1ac61927a3cd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092412_jpg.rf.89a5b6a5deb32ce6628a8a558c1e946a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092414_jpg.rf.7ddb8b78fc68889b4915b4b96159ca27.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092438_jpg.rf.9fa39b9d528904e59f3104619535e699.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092540_jpg.rf.282e38ae72367b30f098e6a3c1e38a2b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_092549_jpg.rf.b6e816b2d4fb7cd6a6edcabbbb638391.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100024_jpg.rf.347fb0770a446f63d2dddd30f54edf46.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100027_jpg.rf.40b5c175021b279ca030a4157a723f34.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100029_jpg.rf.614a6312c926c691d686b654f1d74acf.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100033_jpg.rf.443b1db2f8e8b9579876c30a0714826a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100035_jpg.rf.b948fd06364fc191083459fa312b1b9f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100046_jpg.rf.cca95f570de720435198305a57b414f9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100048_jpg.rf.e2748c732459adddd0fde2952c25eee2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100050_jpg.rf.42be4fdd52fe9376936adce2b048dd3a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100052_jpg.rf.be261f12b872b6ace6230a7596e029c5.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100107_jpg.rf.268513335293b6ff57ff99175d417942.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100112_jpg.rf.364581a0e844654514e4da307d378095.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100114_jpg.rf.01742c72977514adf1db669a287a3cb4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100116_jpg.rf.ab76a5d3d0a590c7459c812836a5b3c9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/cam2_20251231_100120_jpg.rf.85a9a6572bcb08892d1b1910c16033e3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-20-26_png.rf.b8f6b3c32fef6314f3bcb5f39a770abc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-20-50_png.rf.840c46090f859504f9b04bf44a39dfb9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-10_png.rf.07be16fc9a58fd153ee28cf893989ff3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-25_png.rf.1c635f10f5996a8eedadcddb2928fcee.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-34_png.rf.ae87529076781e992ecd73490395d6e5.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-42_png.rf.62b07d34c4b574eb867eb26150474e5a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-49_png.rf.1ec07aa4be3eea9b87ed7804ec83e200.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-54_png.rf.1af2239fe0a548373655c92b7062d51b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-21-59_png.rf.ba01811b9ee5d1a8cdf6c3926368cfee.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-22-29_png.rf.442f329bb1704dede369a4374964cf18.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-22-45_png.rf.7048a2dfbbdae5deb03422057f4d7b21.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-22-55_png.rf.02648f3db87ddd579fadfd7e476d55e7.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-23-02_png.rf.210bb2585da17693e2125e594c127ff4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-23-26_png.rf.141ca48e6771dbf0027131fb5afe655e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-23-39_png.rf.d342bc6727ef6c3fe5e630c3c931ad19.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-24-52_png.rf.7c260a13fff0c044c79bb40b0544e2ff.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-25-18_png.rf.f1b8eab5f3697e83ce438f74d4c7a33d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-25-34_png.rf.cddb2f7f8734d07c236e00e2a1bd971c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-25-52_png.rf.0c75033997ffe93b4871478295fcb23c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-26-31_png.rf.b10bc49ec625984338c10285b844118d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-29-05_png.rf.bb0474e1bb32a89a241fd921c192c0cc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-29-11_png.rf.4eccaf4430edf2a3c4a71eceeaf081f6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-29-20_png.rf.d77ab34cefcd64efa8a8f82a7b92b23b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-29-38_png.rf.bc54f0515329bb068c17350d68138809.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-29-58_png.rf.c2dadfcdd248e4931c9f900dc8fcbe14.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-30-11_png.rf.f5fc0e90115c0ecdf333fb4afda6d4dc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-30-34_png.rf.35f4ac48976231cee739b77702d6ddbf.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-30-52_png.rf.d1dafe7444ab2cc23bbe9841292563e2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-30-59_png.rf.c02bf8cfbd104ad09f260f97a84f8668.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-31-06_png.rf.8502fb6a0f3e7b11afc2c42f874596ae.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-32-09_png.rf.e1bf30dc8c856aece2c8111b4f3632a2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-32-16_png.rf.75400d0f6fb5e008cd2226d9b4e6d035.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-32-23_png.rf.cb4f8b62696864c93fcfde2b1257af3c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-32-27_png.rf.b6db78c286f66b42df29e06b7b40ad71.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-32-42_png.rf.cc66e0f567cb800e63a7d90270ece0eb.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-32-55_png.rf.a933ca88ab7fc95f9c23368a1aa36cb1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-33-01_png.rf.becb2b632e67dbcd8390b9ab1f0a8b49.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-33-05_png.rf.a444e8f8ba9cf1c801f8b850e9b39977.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-33-15_png.rf.d1ca0872926940d14699aef443d6fa63.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-33-22_png.rf.a1ab88108ef188a7187f8856563d1d6d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-33-28_png.rf.5417f8e1c5ffd643addf93a22e847ff1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-33-52_png.rf.c97fd87bc311007b7a4c796fef815029.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-35-20_png.rf.7a4f819d3020b6fe06ce52c4b2b9b127.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-42-34_png.rf.e3fa63ca85ed79833ea9a92a8d9f736d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-43-39_png.rf.207bb8a1a864b5407332c3e3903ee0e4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-43-47_png.rf.4387be50682ee66cb2b92f62205edbd9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-43-52_png.rf.fc4bef76ba21c7f4755453f671e0879d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-44-04_png.rf.9aca62e3d91a9801f1599746f9434055.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-44-08_png.rf.d108a1e392a5501d681dd16d813d5749.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-44-13_png.rf.228c1eb7d551b53c660975448c4e74ff.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-44-17_png.rf.20494fb2384980c480159c74f3b56cbd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-44-22_png.rf.642b79582922babbd172931d50ff72bb.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-49-09_png.rf.7ec8f7bb0e74915ef3a9ca28e6849ffb.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-49-17_png.rf.97dc5dea941ade67635473f5db85a101.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-49-20_png.rf.f0e95d9fc7b6398ffd8cd7494b2fc334.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-49-28_png.rf.290b73db62d9ce7ea17929a85d49573e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-49-33_png.rf.2b22a2cfabbf1db3c9661d2fd3766238.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-10_png.rf.270fb62cbd9b812520ff0e3464dbc278.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-19_png.rf.c2046dec8e5460f44ba62b73da6ecb82.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-23_png.rf.e0cc562d022f3dfc9ae6ef3a1f5ac5ac.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-26_png.rf.db009bf422e4593c0d4e1ad757a281ed.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-42_png.rf.cc061c65e3cbd44967d84a488c5ea91d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-53_png.rf.194bb358c593ee338f55423fbecc904b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-50-57_png.rf.c865a96cc6126a1197bdc544d94277a1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-52-37_png.rf.405b202bddf20f9820abebe911726297.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-19-52-48_png.rf.98e33378f10cf8d07a892fee37f7c7d6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-00-21_png.rf.7540c48284cb74ad85c7780bd86f55b0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-00-26_png.rf.72f688ec77485b7951b8d452cefb5996.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-00-46_png.rf.8bf03cf6a153b98e4a91baf78e70690d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-01-16_png.rf.3e44c78f3aa6deb66748e5110f99aa6a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-01-29_png.rf.d7dd3980cdac08f977eaa01f676d9808.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-01-44_png.rf.714733525f11fd8e00230c76362c78d7.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-02-15_png.rf.2d5f25ef03b12b6c3f0fa5fdc0cd9737.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-02-30_png.rf.b02bf8f041b8e7f1f0d3975b4e958d9a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-02-37_png.rf.ade744d937b46c1e2855e0823a81107a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-02-52_png.rf.2a0a75356c450e974b66f838413315bf.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-03-45_png.rf.ea499ff4553a0e1857b27d3fddb1ddb0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-03-54_png.rf.1a805ba48d67ff8e07b47adaaba153b1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-04-18_png.rf.493f377a739b5918e1f8cfc4141783b7.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-04-45_png.rf.df9f3f44fb55f1870e1dde1484348bdf.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-05-03_png.rf.4b8cbecc72a8b6ebb647ae11d03c8274.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-05-08_png.rf.a932a0a3b0f661c7e05f54c50cb4e19d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-05-32_png.rf.fa8a1240d3d149f6c1b4c0cc23ca31b3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-06-50_png.rf.7e9560853f1238d8680da32137801610.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-07-01_png.rf.c05b080f6bb5f5121f60b9d93c8de836.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-54-22_png.rf.2335ff824c726184ae76d2e0a8a18762.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-54-33_png.rf.3d7039ce2bb5afded96ce7a274784a18.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-54-45_png.rf.e34c07cfd0fe7427f1a8fd0c73e7e975.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-54-58_png.rf.e4f88777c49e2cdb37e729ccf2763732.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-55-04_png.rf.d24fd7a08e0195019a005e587cc1b3b4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-55-11_png.rf.98c84533d1ac05ea1e9efbff9bdac728.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-55-17_png.rf.2f89d5ed6551552eb0217cd488bc1615.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-55-49_png.rf.67553df866935543fafd2201febe1421.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-57-20_png.rf.f730c9bceeb59f61d2e537f028305e33.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-58-02_png.rf.80c29760a2c63121db8ff564831063e1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-58-09_png.rf.e3db158d7a0e09b48ec04584f1f247ce.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-58-18_png.rf.0604757445269edcc93dd20ffba8f063.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-20-58-46_png.rf.c38b2d1730e40d73f73489a1e5497001.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-21-07-34_png.rf.2f5b75c5f4243fbb6a8f5cefd5f967e2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-21-07-41_png.rf.22d29a90daa04cc07ab8847440ea99c8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-21-07-48_png.rf.7672515add0b3059fad361bd3bbe35ed.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-21-07-54_png.rf.ca5a22ea73a73eedda7c5de65c2da8b8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-21-08-04_png.rf.a19fea5c1a6d533c10d913d64901f522.jpg
+    │   │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/train/images/Screenshot-from-2025-12-30-21-08-17_png.rf.f3167228f9e60d46cef34962c6d7fece.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_090651_jpg.rf.f68d0e065b0711c918aea62677f60454.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_090652_jpg.rf.dd8e61279d45cd2c4d3ac9288f1f9f59.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_090733_jpg.rf.401c257e5dbe882d341bdafb3b470fdc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_090742_jpg.rf.36c0bd3add981f5349eecc71f59ec0eb.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_090927_jpg.rf.88cc728e65c3b62e838c29b31cf86ec1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_090946_jpg.rf.1962048e14ef6d15b94c00f57c02479c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091050_jpg.rf.d8b72a3c380581db2d37fa5751a912b9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091101_jpg.rf.db0a95fcea29a88d7787f66dc3fb4c5c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091111_jpg.rf.bf3437408799d04d7116fb614161c5c1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091126_jpg.rf.9a87fb31b97ca8e8acefd8662ada65ed.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091327_jpg.rf.6945aebeb185ab3efc211f3e1c58c1ff.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091329_jpg.rf.e935eb501d75bd32a9e3892e5db46196.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091337_jpg.rf.c0e50ebe3178c5b46a88bf0022b87a97.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091339_jpg.rf.86dbb36ec690aadcd4039975dbb2b305.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091349_jpg.rf.5b04ee1d751797f778a09d8e71ea6ef9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091414_jpg.rf.d947435984773dceec6c00d8f49a31e3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091617_jpg.rf.4b430ce060290d87b46a0e834c5874dd.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091639_jpg.rf.3171083dcbda9cdcbb17f0a4ed085634.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091704_jpg.rf.2940406bbc5da46a8dd3a5e7545a3036.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091735_jpg.rf.f974ae0d3de5e76c47d4839a6938cf4a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091738_jpg.rf.4e7cec859d687466b713c7c0adb8f583.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091808_jpg.rf.ca75ece3ee14a129861fc40927b6ffe3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091811_jpg.rf.68800a1731eabeffe57ce10e1f83827c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_091853_jpg.rf.bce7073bc149c0e2f67e55d30253911e.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092315_jpg.rf.99e9463199f67ee12980ecaf45dfb675.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092411_jpg.rf.51a8c57c429ea67ec01c1ac61927a3cd.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092412_jpg.rf.89a5b6a5deb32ce6628a8a558c1e946a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092414_jpg.rf.7ddb8b78fc68889b4915b4b96159ca27.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092438_jpg.rf.9fa39b9d528904e59f3104619535e699.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092540_jpg.rf.282e38ae72367b30f098e6a3c1e38a2b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_092549_jpg.rf.b6e816b2d4fb7cd6a6edcabbbb638391.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100024_jpg.rf.347fb0770a446f63d2dddd30f54edf46.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100027_jpg.rf.40b5c175021b279ca030a4157a723f34.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100029_jpg.rf.614a6312c926c691d686b654f1d74acf.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100033_jpg.rf.443b1db2f8e8b9579876c30a0714826a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100035_jpg.rf.b948fd06364fc191083459fa312b1b9f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100046_jpg.rf.cca95f570de720435198305a57b414f9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100048_jpg.rf.e2748c732459adddd0fde2952c25eee2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100050_jpg.rf.42be4fdd52fe9376936adce2b048dd3a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100052_jpg.rf.be261f12b872b6ace6230a7596e029c5.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100107_jpg.rf.268513335293b6ff57ff99175d417942.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100112_jpg.rf.364581a0e844654514e4da307d378095.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100114_jpg.rf.01742c72977514adf1db669a287a3cb4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100116_jpg.rf.ab76a5d3d0a590c7459c812836a5b3c9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/cam2_20251231_100120_jpg.rf.85a9a6572bcb08892d1b1910c16033e3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-20-26_png.rf.b8f6b3c32fef6314f3bcb5f39a770abc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-20-50_png.rf.840c46090f859504f9b04bf44a39dfb9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-10_png.rf.07be16fc9a58fd153ee28cf893989ff3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-25_png.rf.1c635f10f5996a8eedadcddb2928fcee.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-34_png.rf.ae87529076781e992ecd73490395d6e5.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-42_png.rf.62b07d34c4b574eb867eb26150474e5a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-49_png.rf.1ec07aa4be3eea9b87ed7804ec83e200.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-54_png.rf.1af2239fe0a548373655c92b7062d51b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-21-59_png.rf.ba01811b9ee5d1a8cdf6c3926368cfee.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-22-29_png.rf.442f329bb1704dede369a4374964cf18.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-22-45_png.rf.7048a2dfbbdae5deb03422057f4d7b21.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-22-55_png.rf.02648f3db87ddd579fadfd7e476d55e7.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-23-02_png.rf.210bb2585da17693e2125e594c127ff4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-23-26_png.rf.141ca48e6771dbf0027131fb5afe655e.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-23-39_png.rf.d342bc6727ef6c3fe5e630c3c931ad19.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-24-52_png.rf.7c260a13fff0c044c79bb40b0544e2ff.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-25-18_png.rf.f1b8eab5f3697e83ce438f74d4c7a33d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-25-34_png.rf.cddb2f7f8734d07c236e00e2a1bd971c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-25-52_png.rf.0c75033997ffe93b4871478295fcb23c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-26-31_png.rf.b10bc49ec625984338c10285b844118d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-29-05_png.rf.bb0474e1bb32a89a241fd921c192c0cc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-29-11_png.rf.4eccaf4430edf2a3c4a71eceeaf081f6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-29-20_png.rf.d77ab34cefcd64efa8a8f82a7b92b23b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-29-38_png.rf.bc54f0515329bb068c17350d68138809.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-29-58_png.rf.c2dadfcdd248e4931c9f900dc8fcbe14.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-30-11_png.rf.f5fc0e90115c0ecdf333fb4afda6d4dc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-30-34_png.rf.35f4ac48976231cee739b77702d6ddbf.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-30-52_png.rf.d1dafe7444ab2cc23bbe9841292563e2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-30-59_png.rf.c02bf8cfbd104ad09f260f97a84f8668.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-31-06_png.rf.8502fb6a0f3e7b11afc2c42f874596ae.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-32-09_png.rf.e1bf30dc8c856aece2c8111b4f3632a2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-32-16_png.rf.75400d0f6fb5e008cd2226d9b4e6d035.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-32-23_png.rf.cb4f8b62696864c93fcfde2b1257af3c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-32-27_png.rf.b6db78c286f66b42df29e06b7b40ad71.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-32-42_png.rf.cc66e0f567cb800e63a7d90270ece0eb.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-32-55_png.rf.a933ca88ab7fc95f9c23368a1aa36cb1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-33-01_png.rf.becb2b632e67dbcd8390b9ab1f0a8b49.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-33-05_png.rf.a444e8f8ba9cf1c801f8b850e9b39977.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-33-15_png.rf.d1ca0872926940d14699aef443d6fa63.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-33-22_png.rf.a1ab88108ef188a7187f8856563d1d6d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-33-28_png.rf.5417f8e1c5ffd643addf93a22e847ff1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-33-52_png.rf.c97fd87bc311007b7a4c796fef815029.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-35-20_png.rf.7a4f819d3020b6fe06ce52c4b2b9b127.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-42-34_png.rf.e3fa63ca85ed79833ea9a92a8d9f736d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-43-39_png.rf.207bb8a1a864b5407332c3e3903ee0e4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-43-47_png.rf.4387be50682ee66cb2b92f62205edbd9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-43-52_png.rf.fc4bef76ba21c7f4755453f671e0879d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-44-04_png.rf.9aca62e3d91a9801f1599746f9434055.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-44-08_png.rf.d108a1e392a5501d681dd16d813d5749.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-44-13_png.rf.228c1eb7d551b53c660975448c4e74ff.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-44-17_png.rf.20494fb2384980c480159c74f3b56cbd.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-44-22_png.rf.642b79582922babbd172931d50ff72bb.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-49-09_png.rf.7ec8f7bb0e74915ef3a9ca28e6849ffb.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-49-17_png.rf.97dc5dea941ade67635473f5db85a101.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-49-20_png.rf.f0e95d9fc7b6398ffd8cd7494b2fc334.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-49-28_png.rf.290b73db62d9ce7ea17929a85d49573e.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-49-33_png.rf.2b22a2cfabbf1db3c9661d2fd3766238.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-10_png.rf.270fb62cbd9b812520ff0e3464dbc278.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-19_png.rf.c2046dec8e5460f44ba62b73da6ecb82.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-23_png.rf.e0cc562d022f3dfc9ae6ef3a1f5ac5ac.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-26_png.rf.db009bf422e4593c0d4e1ad757a281ed.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-42_png.rf.cc061c65e3cbd44967d84a488c5ea91d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-53_png.rf.194bb358c593ee338f55423fbecc904b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-50-57_png.rf.c865a96cc6126a1197bdc544d94277a1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-52-37_png.rf.405b202bddf20f9820abebe911726297.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-19-52-48_png.rf.98e33378f10cf8d07a892fee37f7c7d6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-00-21_png.rf.7540c48284cb74ad85c7780bd86f55b0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-00-26_png.rf.72f688ec77485b7951b8d452cefb5996.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-00-46_png.rf.8bf03cf6a153b98e4a91baf78e70690d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-01-16_png.rf.3e44c78f3aa6deb66748e5110f99aa6a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-01-29_png.rf.d7dd3980cdac08f977eaa01f676d9808.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-01-44_png.rf.714733525f11fd8e00230c76362c78d7.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-02-15_png.rf.2d5f25ef03b12b6c3f0fa5fdc0cd9737.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-02-30_png.rf.b02bf8f041b8e7f1f0d3975b4e958d9a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-02-37_png.rf.ade744d937b46c1e2855e0823a81107a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-02-52_png.rf.2a0a75356c450e974b66f838413315bf.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-03-45_png.rf.ea499ff4553a0e1857b27d3fddb1ddb0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-03-54_png.rf.1a805ba48d67ff8e07b47adaaba153b1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-04-18_png.rf.493f377a739b5918e1f8cfc4141783b7.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-04-45_png.rf.df9f3f44fb55f1870e1dde1484348bdf.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-05-03_png.rf.4b8cbecc72a8b6ebb647ae11d03c8274.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-05-08_png.rf.a932a0a3b0f661c7e05f54c50cb4e19d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-05-32_png.rf.fa8a1240d3d149f6c1b4c0cc23ca31b3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-06-50_png.rf.7e9560853f1238d8680da32137801610.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-07-01_png.rf.c05b080f6bb5f5121f60b9d93c8de836.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-54-22_png.rf.2335ff824c726184ae76d2e0a8a18762.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-54-33_png.rf.3d7039ce2bb5afded96ce7a274784a18.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-54-45_png.rf.e34c07cfd0fe7427f1a8fd0c73e7e975.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-54-58_png.rf.e4f88777c49e2cdb37e729ccf2763732.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-55-04_png.rf.d24fd7a08e0195019a005e587cc1b3b4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-55-11_png.rf.98c84533d1ac05ea1e9efbff9bdac728.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-55-17_png.rf.2f89d5ed6551552eb0217cd488bc1615.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-55-49_png.rf.67553df866935543fafd2201febe1421.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-57-20_png.rf.f730c9bceeb59f61d2e537f028305e33.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-58-02_png.rf.80c29760a2c63121db8ff564831063e1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-58-09_png.rf.e3db158d7a0e09b48ec04584f1f247ce.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-58-18_png.rf.0604757445269edcc93dd20ffba8f063.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-20-58-46_png.rf.c38b2d1730e40d73f73489a1e5497001.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-21-07-34_png.rf.2f5b75c5f4243fbb6a8f5cefd5f967e2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-21-07-41_png.rf.22d29a90daa04cc07ab8847440ea99c8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-21-07-48_png.rf.7672515add0b3059fad361bd3bbe35ed.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-21-07-54_png.rf.ca5a22ea73a73eedda7c5de65c2da8b8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-21-08-04_png.rf.a19fea5c1a6d533c10d913d64901f522.txt
+    │   │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels/Screenshot-from-2025-12-30-21-08-17_png.rf.f3167228f9e60d46cef34962c6d7fece.txt
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/train/labels.cache
+    │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/valid
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_090936_jpg.rf.ebf14097c1571711d5cb469061a0848c.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_091037_jpg.rf.2bbe1371b9e12560ef31abf4819aa91d.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_091226_jpg.rf.dd6efe120d1442e2977d006ba37b39cc.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_091254_jpg.rf.53c748877bf486f4284d41f3d4d9632d.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_092514_jpg.rf.5330c68ed277d5737b65b6ee35bb6639.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_092608_jpg.rf.39df72bfbb5f1356e7df2cf708b68d50.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_100031_jpg.rf.f999793f7751ec5f955c77ec1287a097.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_100037_jpg.rf.7b2f23edbd5967631d5ba20e3630e850.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_100054_jpg.rf.4d9472d419a65a2e4cf0bd4a03a88725.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_100110_jpg.rf.3663a259e6e21d3ac0ca833dc4e23a3f.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/cam2_20251231_100125_jpg.rf.7939dc61c80b96083f2586db23a3a321.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-21-16_png.rf.5e1bc6825ef06f8e1f68e6b095b6d7e0.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-24-11_png.rf.d1aa0a9a253c04ddf106b64fb8611884.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-25-41_png.rf.cfc0e3ca77200aa4e29f0f4453ac46b0.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-28-47_png.rf.cf5053fca6ac8433128d199a484cb3bf.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-28-56_png.rf.86f67aff79490a8cdcd9f184cfa0a857.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-29-33_png.rf.b8aad0fc52c8c3b899b96dbc0c30e0a6.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-29-49_png.rf.8d371ce7f857cdcf200e8f8e2037758c.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-32-04_png.rf.f74585b5abc9c48bfd3cfa4da144c1bc.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-32-12_png.rf.3c890d680a7607263c109942439bafaf.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-32-29_png.rf.7d12c4fce4ecbc2984045bb2656135f6.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-33-13_png.rf.e313b55981f2f905bb4b5b4bef5ab71c.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-35-18_png.rf.8bd3f183bbf6501c8d60b388dadee56b.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-43-57_png.rf.10464717017ec8013ca965184ec9306d.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-49-24_png.rf.0fef178f0a25602e315aa5a0dd74ffe9.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-50-14_png.rf.b82094951ed3101a7a02ddfbcff21fbb.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-50-35_png.rf.3329cd6d78ec9f7cb148f1f084cabd54.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-19-52-44_png.rf.03f5762d896e33cf5a6bed89613c52e7.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-00-42_png.rf.6df264c8df830bb49ff36f200cf9d4f4.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-00-50_png.rf.06cd602d3931a4238831a96d8045a879.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-00-57_png.rf.a818a026485e35eb866f1cb0c53cd4f6.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-03-04_png.rf.cb8451566b80e9c15092971f24cb2195.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-03-11_png.rf.1f4cd484ef4a0d672cfc12e3a71049e1.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-03-19_png.rf.f7a3b851ebe47baebd66b600cca91c08.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-03-24_png.rf.30b0f7e13cafc45ef72463c47d030ff7.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-04-05_png.rf.ef119c8ff459c7abb52b2d80e7b96c06.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-06-29_png.rf.f4c0968d74c418f620f7f69cacb15e91.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-07-05_png.rf.6d755644b59c9b5345788bb9068f980e.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-07-17_png.rf.33f4fc5a13e25dda3c318382e1f9da94.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-07-22_png.rf.81d7df390b007e354d65a33c314571ac.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-20-57-00_png.rf.1e30790822b4885e386df49cb38c6809.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-21-06-37_png.rf.6ff527540b931a8300015608463df97b.jpg
+    │   │   │       │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/images/Screenshot-from-2025-12-30-21-07-24_png.rf.ef5f0fc5ba5d32b21c4944983f6d41e3.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_090936_jpg.rf.ebf14097c1571711d5cb469061a0848c.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_091037_jpg.rf.2bbe1371b9e12560ef31abf4819aa91d.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_091226_jpg.rf.dd6efe120d1442e2977d006ba37b39cc.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_091254_jpg.rf.53c748877bf486f4284d41f3d4d9632d.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_092514_jpg.rf.5330c68ed277d5737b65b6ee35bb6639.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_092608_jpg.rf.39df72bfbb5f1356e7df2cf708b68d50.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_100031_jpg.rf.f999793f7751ec5f955c77ec1287a097.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_100037_jpg.rf.7b2f23edbd5967631d5ba20e3630e850.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_100054_jpg.rf.4d9472d419a65a2e4cf0bd4a03a88725.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_100110_jpg.rf.3663a259e6e21d3ac0ca833dc4e23a3f.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/cam2_20251231_100125_jpg.rf.7939dc61c80b96083f2586db23a3a321.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-21-16_png.rf.5e1bc6825ef06f8e1f68e6b095b6d7e0.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-24-11_png.rf.d1aa0a9a253c04ddf106b64fb8611884.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-25-41_png.rf.cfc0e3ca77200aa4e29f0f4453ac46b0.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-28-47_png.rf.cf5053fca6ac8433128d199a484cb3bf.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-28-56_png.rf.86f67aff79490a8cdcd9f184cfa0a857.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-29-33_png.rf.b8aad0fc52c8c3b899b96dbc0c30e0a6.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-29-49_png.rf.8d371ce7f857cdcf200e8f8e2037758c.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-32-04_png.rf.f74585b5abc9c48bfd3cfa4da144c1bc.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-32-12_png.rf.3c890d680a7607263c109942439bafaf.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-32-29_png.rf.7d12c4fce4ecbc2984045bb2656135f6.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-33-13_png.rf.e313b55981f2f905bb4b5b4bef5ab71c.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-35-18_png.rf.8bd3f183bbf6501c8d60b388dadee56b.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-43-57_png.rf.10464717017ec8013ca965184ec9306d.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-49-24_png.rf.0fef178f0a25602e315aa5a0dd74ffe9.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-50-14_png.rf.b82094951ed3101a7a02ddfbcff21fbb.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-50-35_png.rf.3329cd6d78ec9f7cb148f1f084cabd54.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-19-52-44_png.rf.03f5762d896e33cf5a6bed89613c52e7.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-00-42_png.rf.6df264c8df830bb49ff36f200cf9d4f4.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-00-50_png.rf.06cd602d3931a4238831a96d8045a879.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-00-57_png.rf.a818a026485e35eb866f1cb0c53cd4f6.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-03-04_png.rf.cb8451566b80e9c15092971f24cb2195.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-03-11_png.rf.1f4cd484ef4a0d672cfc12e3a71049e1.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-03-19_png.rf.f7a3b851ebe47baebd66b600cca91c08.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-03-24_png.rf.30b0f7e13cafc45ef72463c47d030ff7.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-04-05_png.rf.ef119c8ff459c7abb52b2d80e7b96c06.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-06-29_png.rf.f4c0968d74c418f620f7f69cacb15e91.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-07-05_png.rf.6d755644b59c9b5345788bb9068f980e.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-07-17_png.rf.33f4fc5a13e25dda3c318382e1f9da94.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-07-22_png.rf.81d7df390b007e354d65a33c314571ac.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-20-57-00_png.rf.1e30790822b4885e386df49cb38c6809.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-21-06-37_png.rf.6ff527540b931a8300015608463df97b.txt
+    │   │   │       │   └── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels/Screenshot-from-2025-12-30-21-07-24_png.rf.ef5f0fc5ba5d32b21c4944983f6d41e3.txt
+    │   │   │       └── ./src/emergency_camera/emergency_camera/251230_detection-2/valid/labels.cache
+    │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/data.yaml
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/README.dataset.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/README.roboflow.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/cam2_20251231_100057_jpg.rf.d4853d2d4f52056982b24faba0ccdf32.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-21-30_png.rf.247ba299593598813d8ed67e228ff159.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-24-26_png.rf.06404f64f3da2c9c85a620641c22e2dd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-27-16_png.rf.b3138093a91b41ed7283a8a2a5c22176.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-27-39_png.rf.a5d0c016d3985d0a57f99b3e23931f6d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-32-45_png.rf.14f53422bc91ef7274687977788c42cf.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-34-18_png.rf.68c09a9091bb74e7111b6b353f410819.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-43-33_png.rf.3330438da35c4916d5b1af763b5a7ada.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-50-30_png.rf.d8fadf6254f70ef5e3f613e8274cb5c1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-50-46_png.rf.1b5591af0efcf04173b6978c17b94369.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-19-50-50_png.rf.8672825c04b92d511e282d33474752a8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-00-30_png.rf.cd89cf441b20634d162bb44c17a5e2e3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-00-37_png.rf.f53eb4da2888d7f8d3ab4de39670e9cc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-01-54_png.rf.6506a20c3b30c10a60ff270f85e62cc2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-03-36_png.rf.deffcf0c21291e098d5b257eed50b7f0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-04-36_png.rf.fe76e5c936785ff1a5bb588781837ad0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-05-24_png.rf.44681bf0313325dc2d67596923d181d6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-06-43_png.rf.ebbe159ea32062f2380949124460942e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-20-58-41_png.rf.7779ea6d0bb9713a0bd11df2c09bc593.jpg
+    │   │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/test/images/Screenshot-from-2025-12-30-21-08-26_png.rf.da18419afb4d9ff0642fae32b10c53e1.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/cam2_20251231_100057_jpg.rf.d4853d2d4f52056982b24faba0ccdf32.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-21-30_png.rf.247ba299593598813d8ed67e228ff159.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-24-26_png.rf.06404f64f3da2c9c85a620641c22e2dd.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-27-16_png.rf.b3138093a91b41ed7283a8a2a5c22176.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-27-39_png.rf.a5d0c016d3985d0a57f99b3e23931f6d.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-32-45_png.rf.14f53422bc91ef7274687977788c42cf.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-34-18_png.rf.68c09a9091bb74e7111b6b353f410819.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-43-33_png.rf.3330438da35c4916d5b1af763b5a7ada.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-50-30_png.rf.d8fadf6254f70ef5e3f613e8274cb5c1.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-50-46_png.rf.1b5591af0efcf04173b6978c17b94369.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-19-50-50_png.rf.8672825c04b92d511e282d33474752a8.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-00-30_png.rf.cd89cf441b20634d162bb44c17a5e2e3.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-00-37_png.rf.f53eb4da2888d7f8d3ab4de39670e9cc.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-01-54_png.rf.6506a20c3b30c10a60ff270f85e62cc2.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-03-36_png.rf.deffcf0c21291e098d5b257eed50b7f0.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-04-36_png.rf.fe76e5c936785ff1a5bb588781837ad0.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-05-24_png.rf.44681bf0313325dc2d67596923d181d6.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-06-43_png.rf.ebbe159ea32062f2380949124460942e.txt
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-20-58-41_png.rf.7779ea6d0bb9713a0bd11df2c09bc593.txt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/251230_detection-3/test/labels/Screenshot-from-2025-12-30-21-08-26_png.rf.da18419afb4d9ff0642fae32b10c53e1.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_090651_jpg.rf.29600ee253aebe8947bfdf37e8c73919.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_090652_jpg.rf.2cbc3d9f0ced25f82bc955d5b3fc8882.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_090733_jpg.rf.9c38ad0003efd9e42f3ea817115e33c1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_090742_jpg.rf.7919ce28fc40eec07963a8598ff5c36b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_090927_jpg.rf.a46b54eb58e7b57f75547980a16a6c21.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_090946_jpg.rf.56fe236674f2cdd145e41243db5455d0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091050_jpg.rf.eadcc642724ce2dab7286a575b34bde6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091101_jpg.rf.ed312e6eea21903d9fd42b725294983a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091111_jpg.rf.27042c9cfb569242e99cba675012b1fb.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091126_jpg.rf.1a157104f8f4e0bba447764321b5552d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091327_jpg.rf.0fd47a4e3eaa397b8ba159f8e48d24a4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091329_jpg.rf.9a38dc3ea21a808e870ffaf179ea01ef.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091337_jpg.rf.78721303b7bd6a92a965fadcd2edcd64.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091339_jpg.rf.5ded2f2f76994fc0253db0b1e3ca4a0c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091349_jpg.rf.e9729055509b978283079220e7840ba4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091414_jpg.rf.bc1d3aea63291f2dc2da0e2e3b27fc71.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091617_jpg.rf.d305c489291e2f4a12ce287cb324ccd5.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091639_jpg.rf.b0e3c9cbca9f283ffdff5946e3e6f36c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091704_jpg.rf.b4d7a882811b23050298604aea2440a8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091735_jpg.rf.a5b01f9f986ba80acd7b151bad12c2cb.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091738_jpg.rf.f5d2537057ef87ebce88bc02303e856a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091808_jpg.rf.1de2c0ed4e9820f61849535ac6e05766.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091811_jpg.rf.2c4777be5be23c13598d2992543d336f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_091853_jpg.rf.8c0e96f439ddb58c125b1e966b592b50.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092315_jpg.rf.5576ba33bbe62f7e892feb049b0dc96a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092411_jpg.rf.9f81cb3a8b6c8f402667cac9a84fac65.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092412_jpg.rf.a598d8825bb758798525d2d2cc3eb33c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092414_jpg.rf.60a5c1be171b59008048eb35a7e901ad.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092438_jpg.rf.73bf68c4993b8858d9f44391c57208a7.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092540_jpg.rf.6e37adbac9487cfaa476d60f61209be5.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_092549_jpg.rf.66fce29bf89af02e5db212ce836054f6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100024_jpg.rf.4d7dbfbb36bd0ca3c9e8fc5647e0cb6e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100027_jpg.rf.6b27882c162bae96cad16cd3d5a0b20a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100029_jpg.rf.1749c1001937f3be0e0d813ea69ce2dc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100033_jpg.rf.70226a81aa757ddc693a49e477d14492.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100035_jpg.rf.f2d6750da1c3907df6151b866659a64f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100046_jpg.rf.d7eb1d6bf25cf740a2800481c73de377.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100048_jpg.rf.b44bfb93815bf8f0748b0dde16ea0f09.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100050_jpg.rf.3e78462e1bd991480b58e821485560fa.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100052_jpg.rf.451ed8cfbb9446a3cab61953602fbab6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100107_jpg.rf.637f767f6f9bd2f74f38a6dd0c2148ca.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100112_jpg.rf.1d535a0b03e5818012333154f1def306.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100114_jpg.rf.fa15d7dc2d5554af9f3b18b5ece34ab6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100116_jpg.rf.2b176e088e0bbea55f8a062b8e767946.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/cam2_20251231_100120_jpg.rf.1f0116351f67c8b11be0d6ebd420b8bd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-20-26_png.rf.afbd297d4a343e2fff7c443da752676a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-20-50_png.rf.6f5fa02b8476a827928d4c21a04c492d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-10_png.rf.181f56dfc2f9d3e1fc6f5155209a1c88.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-25_png.rf.ab2b2ca240662b6801e24720dd5751b2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-34_png.rf.d67bb1239d03ea42393d823db2410ae3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-42_png.rf.fbc8a4f2bd050bcaf00eb9708432926a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-49_png.rf.da1b3d2500d7d87b291009d8a5bf289b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-54_png.rf.6ba4099320cd9fedd9661d8fb646f370.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-21-59_png.rf.17aa0ff1ac6d8776469f4e94073e6abf.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-22-29_png.rf.7d1e688d3b2b2df6610c4871bb2e1373.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-22-45_png.rf.034677c0c1897e3d1deeba28ee5037ea.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-22-55_png.rf.c4aa7b02d6a1209d2ff15001f052f636.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-23-02_png.rf.40ecd17ec3cf1d8a1ee1f0511be216f9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-23-26_png.rf.5e8759363a3f555570558b3beb530cca.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-23-39_png.rf.00036e6fb110a03838b88f3543c65e52.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-24-52_png.rf.57dfa63efe14ced5e87b1ffb0a526d9f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-25-18_png.rf.dad2f009c850ad06923640bb4d8ab2ac.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-25-34_png.rf.25d3e5e78605cb5456e988901075fb14.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-25-52_png.rf.116e3aba0b849ad0a2651942bda18368.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-26-31_png.rf.5f68a0e00790b5586645424085d8cce9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-29-05_png.rf.88b3326e64e9ec284acc6cea8e8246d4.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-29-11_png.rf.9177cb82415a69262340fd79e48fc5fc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-29-20_png.rf.10b676329c999856f85d8b01722952bd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-29-38_png.rf.9e8faed5407fb6204c66c724c467548a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-29-58_png.rf.4643249a0c3fbc5cce8b7f9fe35ef941.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-30-11_png.rf.f4dc7e5a33ad377559f7a2babf52b9b2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-30-34_png.rf.147a73b33ed5e1f281106f58b864c1ad.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-30-52_png.rf.cb17c224f21096d02b1e0d21005f6a85.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-30-59_png.rf.e00e72f7d3bbf6f2aee33a86bb837197.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-31-06_png.rf.f238292786a46f886c9c4e682d59bd1f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-32-09_png.rf.d6eadf06f63dfb1c72a0c01483271eae.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-32-16_png.rf.34cfe5895e231c29dcf7a0c23f09fe55.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-32-23_png.rf.892e498c3008f02daad2d44495bf059f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-32-27_png.rf.9c4366af3199c186d96e0f0228536384.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-32-42_png.rf.a8f386330e1dbaaa608427a19dd8cd9b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-32-55_png.rf.48f0204b1a26e65e0c373b77ae7d9172.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-33-01_png.rf.9f98626c22bf7f24a0d12215bb1e3ac0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-33-05_png.rf.feb41f43fc7f9b8f8b90ac2ec8f22f24.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-33-15_png.rf.78c24b83d2853496924d845c344dbd11.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-33-22_png.rf.becd74e3a6c51d7e1eb637681f395988.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-33-28_png.rf.5608ed960a3024cb611e836f750b3225.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-33-52_png.rf.65e12ba1bd9e1e1e5bad61d207db0418.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-35-20_png.rf.5d222e46a44e03e444607dd246640ab8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-42-34_png.rf.607e40f3eade85453323c8c5037d1d4d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-43-39_png.rf.9ca9787e4a16a05cb15f48d4c5e1ca4c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-43-47_png.rf.b4573a841cbfc9982930f80190304316.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-43-52_png.rf.ecc1464bf9466f332e829ba5b1aa7b49.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-44-04_png.rf.a9059ef839bf021b6ffd6fb147f0ccb0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-44-08_png.rf.fd8a10a5c890f6739759a546eddf3a62.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-44-13_png.rf.d036f964d4a0aac90a737122fe6b2658.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-44-17_png.rf.a525282083cff1a0b2be69a05038944d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-44-22_png.rf.ead3ede1a8ad240180865fa7e96ca8f2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-49-09_png.rf.0c5ba1378baea7bc5fd2bc0ff5b56d30.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-49-17_png.rf.e9567f21607a54645d02d139040088e7.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-49-20_png.rf.de1228c0181da509a0514b86b093dc51.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-49-28_png.rf.b3ed9f5c51b8a1fc8e487817364e9b5c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-49-33_png.rf.240e6642696ce90c9ed2f90ae829e7de.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-10_png.rf.1257622a136a1736ffd5b573474e8eca.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-19_png.rf.46b11af702739dbe6cfe838518f1f05c.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-23_png.rf.27c6ab47b61e78d23fced95731a12ff1.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-26_png.rf.3bbdd767bf17c4fd1292503c83807633.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-42_png.rf.4bc47096c6df8cc0db69c83f06130326.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-53_png.rf.ebb0a3df34bb42573975e27edc470ea2.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-50-57_png.rf.c14fb3b677ca971e8edd1fc68f587df5.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-52-37_png.rf.59271290697798f099408366eb5ecafe.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-19-52-48_png.rf.7adea13df09dce4919fb9f350944134e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-00-21_png.rf.9a0a621c5bde00635bb04ea3d3eff93b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-00-26_png.rf.c2fb3ae94ae57fc409a8ab1519f008a8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-00-46_png.rf.4f30fe7d392e163074b7d6a41a199b63.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-01-16_png.rf.828ff063e3c28328dcef854f1e10c54d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-01-29_png.rf.93eea004963ba3a66c8ccd4fc4b72b83.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-01-44_png.rf.4301a2684c6005215cc6149c1e36d949.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-02-15_png.rf.353fe23346d37b9bee6106d3b79391a8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-02-30_png.rf.8c42b9c7481c60708c66efc8807b5b1a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-02-37_png.rf.52d602899f9105c0666a1e5f1dd6e28a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-02-52_png.rf.59b2c3781f7b198d7c7b76b3d95df2b9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-03-45_png.rf.8477afc747bf194fa04ee41f488ec09b.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-03-54_png.rf.c447c350b1ecca207267d525523bc43a.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-04-18_png.rf.dd3a578427c9917da2f86db60126b489.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-04-45_png.rf.a327bbdc56aad19da50bad488cbeeea0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-05-03_png.rf.af4ab25a5dda043213102536a37f556f.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-05-08_png.rf.40c16af62faf44d0813934e9dbf1e839.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-05-32_png.rf.e00d45fb07e53413a185a3816b904c65.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-06-50_png.rf.76ede5e0247319eeadab44f0b71ea8bd.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-07-01_png.rf.df0a48ae921021ccdfa67aa670d9eee6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-54-22_png.rf.4951355d641fc70b4e6a6491156613f0.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-54-33_png.rf.a3cec2769d89770414310fa9b1e5eea7.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-54-45_png.rf.f34482630df0b8907d96c2337cc35b9e.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-54-58_png.rf.1000efa936418ca15859cc3aebd840a9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-55-04_png.rf.57fcc2bb2b6edb7595ed5ecbf233c584.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-55-11_png.rf.f11f246c2bf94284f931f47ccf050456.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-55-17_png.rf.c9afad6442b4a7d7e336ac78536f5d39.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-55-49_png.rf.8ddaaf0a6e6bf8f924dbd69c4befc4b3.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-57-20_png.rf.340f62f3d8a866e8f609c099883a6cfc.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-58-02_png.rf.4370a8d7d76b8045d67abd27f120db05.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-58-09_png.rf.a2ced150550e296557da59805de88cc9.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-58-18_png.rf.05273205d30b15465691fdfe56a1aea6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-20-58-46_png.rf.e2b5c860dcb5abba26abf636770701d6.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-21-07-34_png.rf.3f6a831156e36576fa8524e796c0f3d8.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-21-07-41_png.rf.9f3a3e7dfec19f8c0eed68b258e58f3d.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-21-07-48_png.rf.7701bfc19344825aad25b6254028d132.jpg
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-21-07-54_png.rf.6862fe94547e0fa98e4babad9d91ff4c.jpg
+    │   │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/train/images/Screenshot-from-2025-12-30-21-08-04_png.rf.4f59b324649bd133af24b257aec8f8e1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_090651_jpg.rf.29600ee253aebe8947bfdf37e8c73919.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_090652_jpg.rf.2cbc3d9f0ced25f82bc955d5b3fc8882.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_090733_jpg.rf.9c38ad0003efd9e42f3ea817115e33c1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_090742_jpg.rf.7919ce28fc40eec07963a8598ff5c36b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_090927_jpg.rf.a46b54eb58e7b57f75547980a16a6c21.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_090946_jpg.rf.56fe236674f2cdd145e41243db5455d0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091050_jpg.rf.eadcc642724ce2dab7286a575b34bde6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091101_jpg.rf.ed312e6eea21903d9fd42b725294983a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091111_jpg.rf.27042c9cfb569242e99cba675012b1fb.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091126_jpg.rf.1a157104f8f4e0bba447764321b5552d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091327_jpg.rf.0fd47a4e3eaa397b8ba159f8e48d24a4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091329_jpg.rf.9a38dc3ea21a808e870ffaf179ea01ef.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091337_jpg.rf.78721303b7bd6a92a965fadcd2edcd64.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091339_jpg.rf.5ded2f2f76994fc0253db0b1e3ca4a0c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091349_jpg.rf.e9729055509b978283079220e7840ba4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091414_jpg.rf.bc1d3aea63291f2dc2da0e2e3b27fc71.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091617_jpg.rf.d305c489291e2f4a12ce287cb324ccd5.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091639_jpg.rf.b0e3c9cbca9f283ffdff5946e3e6f36c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091704_jpg.rf.b4d7a882811b23050298604aea2440a8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091735_jpg.rf.a5b01f9f986ba80acd7b151bad12c2cb.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091738_jpg.rf.f5d2537057ef87ebce88bc02303e856a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091808_jpg.rf.1de2c0ed4e9820f61849535ac6e05766.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091811_jpg.rf.2c4777be5be23c13598d2992543d336f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_091853_jpg.rf.8c0e96f439ddb58c125b1e966b592b50.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092315_jpg.rf.5576ba33bbe62f7e892feb049b0dc96a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092411_jpg.rf.9f81cb3a8b6c8f402667cac9a84fac65.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092412_jpg.rf.a598d8825bb758798525d2d2cc3eb33c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092414_jpg.rf.60a5c1be171b59008048eb35a7e901ad.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092438_jpg.rf.73bf68c4993b8858d9f44391c57208a7.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092540_jpg.rf.6e37adbac9487cfaa476d60f61209be5.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_092549_jpg.rf.66fce29bf89af02e5db212ce836054f6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100024_jpg.rf.4d7dbfbb36bd0ca3c9e8fc5647e0cb6e.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100027_jpg.rf.6b27882c162bae96cad16cd3d5a0b20a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100029_jpg.rf.1749c1001937f3be0e0d813ea69ce2dc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100033_jpg.rf.70226a81aa757ddc693a49e477d14492.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100035_jpg.rf.f2d6750da1c3907df6151b866659a64f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100046_jpg.rf.d7eb1d6bf25cf740a2800481c73de377.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100048_jpg.rf.b44bfb93815bf8f0748b0dde16ea0f09.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100050_jpg.rf.3e78462e1bd991480b58e821485560fa.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100052_jpg.rf.451ed8cfbb9446a3cab61953602fbab6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100107_jpg.rf.637f767f6f9bd2f74f38a6dd0c2148ca.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100112_jpg.rf.1d535a0b03e5818012333154f1def306.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100114_jpg.rf.fa15d7dc2d5554af9f3b18b5ece34ab6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100116_jpg.rf.2b176e088e0bbea55f8a062b8e767946.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/cam2_20251231_100120_jpg.rf.1f0116351f67c8b11be0d6ebd420b8bd.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-20-26_png.rf.afbd297d4a343e2fff7c443da752676a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-20-50_png.rf.6f5fa02b8476a827928d4c21a04c492d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-10_png.rf.181f56dfc2f9d3e1fc6f5155209a1c88.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-25_png.rf.ab2b2ca240662b6801e24720dd5751b2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-34_png.rf.d67bb1239d03ea42393d823db2410ae3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-42_png.rf.fbc8a4f2bd050bcaf00eb9708432926a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-49_png.rf.da1b3d2500d7d87b291009d8a5bf289b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-54_png.rf.6ba4099320cd9fedd9661d8fb646f370.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-21-59_png.rf.17aa0ff1ac6d8776469f4e94073e6abf.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-22-29_png.rf.7d1e688d3b2b2df6610c4871bb2e1373.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-22-45_png.rf.034677c0c1897e3d1deeba28ee5037ea.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-22-55_png.rf.c4aa7b02d6a1209d2ff15001f052f636.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-23-02_png.rf.40ecd17ec3cf1d8a1ee1f0511be216f9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-23-26_png.rf.5e8759363a3f555570558b3beb530cca.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-23-39_png.rf.00036e6fb110a03838b88f3543c65e52.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-24-52_png.rf.57dfa63efe14ced5e87b1ffb0a526d9f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-25-18_png.rf.dad2f009c850ad06923640bb4d8ab2ac.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-25-34_png.rf.25d3e5e78605cb5456e988901075fb14.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-25-52_png.rf.116e3aba0b849ad0a2651942bda18368.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-26-31_png.rf.5f68a0e00790b5586645424085d8cce9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-29-05_png.rf.88b3326e64e9ec284acc6cea8e8246d4.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-29-11_png.rf.9177cb82415a69262340fd79e48fc5fc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-29-20_png.rf.10b676329c999856f85d8b01722952bd.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-29-38_png.rf.9e8faed5407fb6204c66c724c467548a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-29-58_png.rf.4643249a0c3fbc5cce8b7f9fe35ef941.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-30-11_png.rf.f4dc7e5a33ad377559f7a2babf52b9b2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-30-34_png.rf.147a73b33ed5e1f281106f58b864c1ad.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-30-52_png.rf.cb17c224f21096d02b1e0d21005f6a85.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-30-59_png.rf.e00e72f7d3bbf6f2aee33a86bb837197.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-31-06_png.rf.f238292786a46f886c9c4e682d59bd1f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-32-09_png.rf.d6eadf06f63dfb1c72a0c01483271eae.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-32-16_png.rf.34cfe5895e231c29dcf7a0c23f09fe55.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-32-23_png.rf.892e498c3008f02daad2d44495bf059f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-32-27_png.rf.9c4366af3199c186d96e0f0228536384.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-32-42_png.rf.a8f386330e1dbaaa608427a19dd8cd9b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-32-55_png.rf.48f0204b1a26e65e0c373b77ae7d9172.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-33-01_png.rf.9f98626c22bf7f24a0d12215bb1e3ac0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-33-05_png.rf.feb41f43fc7f9b8f8b90ac2ec8f22f24.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-33-15_png.rf.78c24b83d2853496924d845c344dbd11.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-33-22_png.rf.becd74e3a6c51d7e1eb637681f395988.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-33-28_png.rf.5608ed960a3024cb611e836f750b3225.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-33-52_png.rf.65e12ba1bd9e1e1e5bad61d207db0418.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-35-20_png.rf.5d222e46a44e03e444607dd246640ab8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-42-34_png.rf.607e40f3eade85453323c8c5037d1d4d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-43-39_png.rf.9ca9787e4a16a05cb15f48d4c5e1ca4c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-43-47_png.rf.b4573a841cbfc9982930f80190304316.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-43-52_png.rf.ecc1464bf9466f332e829ba5b1aa7b49.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-44-04_png.rf.a9059ef839bf021b6ffd6fb147f0ccb0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-44-08_png.rf.fd8a10a5c890f6739759a546eddf3a62.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-44-13_png.rf.d036f964d4a0aac90a737122fe6b2658.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-44-17_png.rf.a525282083cff1a0b2be69a05038944d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-44-22_png.rf.ead3ede1a8ad240180865fa7e96ca8f2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-49-09_png.rf.0c5ba1378baea7bc5fd2bc0ff5b56d30.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-49-17_png.rf.e9567f21607a54645d02d139040088e7.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-49-20_png.rf.de1228c0181da509a0514b86b093dc51.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-49-28_png.rf.b3ed9f5c51b8a1fc8e487817364e9b5c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-49-33_png.rf.240e6642696ce90c9ed2f90ae829e7de.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-10_png.rf.1257622a136a1736ffd5b573474e8eca.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-19_png.rf.46b11af702739dbe6cfe838518f1f05c.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-23_png.rf.27c6ab47b61e78d23fced95731a12ff1.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-26_png.rf.3bbdd767bf17c4fd1292503c83807633.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-42_png.rf.4bc47096c6df8cc0db69c83f06130326.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-53_png.rf.ebb0a3df34bb42573975e27edc470ea2.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-50-57_png.rf.c14fb3b677ca971e8edd1fc68f587df5.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-52-37_png.rf.59271290697798f099408366eb5ecafe.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-19-52-48_png.rf.7adea13df09dce4919fb9f350944134e.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-00-21_png.rf.9a0a621c5bde00635bb04ea3d3eff93b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-00-26_png.rf.c2fb3ae94ae57fc409a8ab1519f008a8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-00-46_png.rf.4f30fe7d392e163074b7d6a41a199b63.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-01-16_png.rf.828ff063e3c28328dcef854f1e10c54d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-01-29_png.rf.93eea004963ba3a66c8ccd4fc4b72b83.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-01-44_png.rf.4301a2684c6005215cc6149c1e36d949.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-02-15_png.rf.353fe23346d37b9bee6106d3b79391a8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-02-30_png.rf.8c42b9c7481c60708c66efc8807b5b1a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-02-37_png.rf.52d602899f9105c0666a1e5f1dd6e28a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-02-52_png.rf.59b2c3781f7b198d7c7b76b3d95df2b9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-03-45_png.rf.8477afc747bf194fa04ee41f488ec09b.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-03-54_png.rf.c447c350b1ecca207267d525523bc43a.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-04-18_png.rf.dd3a578427c9917da2f86db60126b489.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-04-45_png.rf.a327bbdc56aad19da50bad488cbeeea0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-05-03_png.rf.af4ab25a5dda043213102536a37f556f.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-05-08_png.rf.40c16af62faf44d0813934e9dbf1e839.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-05-32_png.rf.e00d45fb07e53413a185a3816b904c65.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-06-50_png.rf.76ede5e0247319eeadab44f0b71ea8bd.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-07-01_png.rf.df0a48ae921021ccdfa67aa670d9eee6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-54-22_png.rf.4951355d641fc70b4e6a6491156613f0.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-54-33_png.rf.a3cec2769d89770414310fa9b1e5eea7.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-54-45_png.rf.f34482630df0b8907d96c2337cc35b9e.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-54-58_png.rf.1000efa936418ca15859cc3aebd840a9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-55-04_png.rf.57fcc2bb2b6edb7595ed5ecbf233c584.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-55-11_png.rf.f11f246c2bf94284f931f47ccf050456.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-55-17_png.rf.c9afad6442b4a7d7e336ac78536f5d39.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-55-49_png.rf.8ddaaf0a6e6bf8f924dbd69c4befc4b3.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-57-20_png.rf.340f62f3d8a866e8f609c099883a6cfc.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-58-02_png.rf.4370a8d7d76b8045d67abd27f120db05.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-58-09_png.rf.a2ced150550e296557da59805de88cc9.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-58-18_png.rf.05273205d30b15465691fdfe56a1aea6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-20-58-46_png.rf.e2b5c860dcb5abba26abf636770701d6.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-21-07-34_png.rf.3f6a831156e36576fa8524e796c0f3d8.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-21-07-41_png.rf.9f3a3e7dfec19f8c0eed68b258e58f3d.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-21-07-48_png.rf.7701bfc19344825aad25b6254028d132.txt
+    │   │   │   │   │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-21-07-54_png.rf.6862fe94547e0fa98e4babad9d91ff4c.txt
+    │   │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels/Screenshot-from-2025-12-30-21-08-04_png.rf.4f59b324649bd133af24b257aec8f8e1.txt
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/train/labels.cache
+    │   │   │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/valid
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_090936_jpg.rf.c2b3f1913cc138812dcc5cf8f5fed521.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_091037_jpg.rf.0eb04237d38870501a6cedcc2931f627.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_091226_jpg.rf.393040a31e36310d9f0c983db537180d.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_091254_jpg.rf.9e42c17b76db0f980a6e9d223b08c86d.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_092514_jpg.rf.5f1de5fe3a376645c88c69e91f48a336.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_092608_jpg.rf.94bce676fb6f43cb386f05c05cbab09c.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_100031_jpg.rf.9f07dcc1a22e3d9597b140891c089ec5.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_100037_jpg.rf.61d20fe8263c7dd033e082f0af924c04.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_100054_jpg.rf.3f59385d7df7a2200602aa564de8034b.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_100110_jpg.rf.7a18691e8ee42b6ec101e9bbb43b0686.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/cam2_20251231_100125_jpg.rf.55ef1ac52fdfe11b95d813ccd7b11db3.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-21-16_png.rf.7c99a87de3c77ef548edaf3cc245eff4.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-24-11_png.rf.29370176f0e52d82ea86b6d30e16ff3f.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-25-41_png.rf.162741a4fc82383461a8265d674fb1c6.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-28-47_png.rf.d156075364ee818ab153129f79c653b1.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-28-56_png.rf.0c803d91e5f02dcc9abcbe7b3eac76f5.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-29-33_png.rf.0558702c6d472b2c9bcabe2a6bd72211.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-29-49_png.rf.4276f5833b3a158a780a653395390fd7.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-32-04_png.rf.2605c070e93fefadc97f7049b3679cc1.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-32-12_png.rf.48b1eec942c38442a190fd1ca36be0ca.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-32-29_png.rf.6f300d5462b1601a97e296a2fe771eef.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-33-13_png.rf.b9f203267a83fdbde41414b7329ee126.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-35-18_png.rf.93b478a1fa4618923bb9644f05e0de65.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-43-57_png.rf.1e9302b4959f5cb1024d44e03f95454b.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-49-24_png.rf.412d58812778e39e1ddc0737117572a7.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-50-14_png.rf.3f274c1ca7912675b9b7af49a03fc4dd.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-50-35_png.rf.e8a82ca4113e8a4e5e62571d3d2d797f.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-19-52-44_png.rf.04ccd4d913390e999e8c8da42d1a6bae.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-00-42_png.rf.22ec26046374445d050ea7efd58123b7.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-00-50_png.rf.8c98dadcabe06229b580acf737cab28e.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-00-57_png.rf.a4eb9b997b877e2f9d062c87502a6666.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-03-04_png.rf.91306847ed33906684dcd407ae03eb64.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-03-11_png.rf.af7a80b68412cbc6c6eb090a421492fd.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-03-19_png.rf.73bfa129a59e5e9be611ab6a629edca4.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-03-24_png.rf.ec192dc29036d0a2c8a23b2e5f7d3c23.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-04-05_png.rf.33a2be15931915c2d545300ff95e3b99.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-06-29_png.rf.c97ef7dc990212a929714869ec90b1ae.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-07-05_png.rf.89efecb5796e04a87b76f455b1751092.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-07-17_png.rf.4254370b54dfd5cb29c4f637f405e47a.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-07-22_png.rf.04897abf307f3825403021d3f822020c.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-20-57-00_png.rf.858e04a7719c2249fbbbbeab4a76ae23.jpg
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-21-06-37_png.rf.dbf34d76e7df189c6172ab695febf228.jpg
+    │   │   │       │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/images/Screenshot-from-2025-12-30-21-07-24_png.rf.d50eb06996a6c60effe1bee2fce9c05b.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_090936_jpg.rf.c2b3f1913cc138812dcc5cf8f5fed521.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_091037_jpg.rf.0eb04237d38870501a6cedcc2931f627.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_091226_jpg.rf.393040a31e36310d9f0c983db537180d.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_091254_jpg.rf.9e42c17b76db0f980a6e9d223b08c86d.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_092514_jpg.rf.5f1de5fe3a376645c88c69e91f48a336.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_092608_jpg.rf.94bce676fb6f43cb386f05c05cbab09c.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_100031_jpg.rf.9f07dcc1a22e3d9597b140891c089ec5.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_100037_jpg.rf.61d20fe8263c7dd033e082f0af924c04.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_100054_jpg.rf.3f59385d7df7a2200602aa564de8034b.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_100110_jpg.rf.7a18691e8ee42b6ec101e9bbb43b0686.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/cam2_20251231_100125_jpg.rf.55ef1ac52fdfe11b95d813ccd7b11db3.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-21-16_png.rf.7c99a87de3c77ef548edaf3cc245eff4.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-24-11_png.rf.29370176f0e52d82ea86b6d30e16ff3f.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-25-41_png.rf.162741a4fc82383461a8265d674fb1c6.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-28-47_png.rf.d156075364ee818ab153129f79c653b1.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-28-56_png.rf.0c803d91e5f02dcc9abcbe7b3eac76f5.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-29-33_png.rf.0558702c6d472b2c9bcabe2a6bd72211.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-29-49_png.rf.4276f5833b3a158a780a653395390fd7.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-32-04_png.rf.2605c070e93fefadc97f7049b3679cc1.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-32-12_png.rf.48b1eec942c38442a190fd1ca36be0ca.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-32-29_png.rf.6f300d5462b1601a97e296a2fe771eef.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-33-13_png.rf.b9f203267a83fdbde41414b7329ee126.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-35-18_png.rf.93b478a1fa4618923bb9644f05e0de65.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-43-57_png.rf.1e9302b4959f5cb1024d44e03f95454b.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-49-24_png.rf.412d58812778e39e1ddc0737117572a7.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-50-14_png.rf.3f274c1ca7912675b9b7af49a03fc4dd.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-50-35_png.rf.e8a82ca4113e8a4e5e62571d3d2d797f.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-19-52-44_png.rf.04ccd4d913390e999e8c8da42d1a6bae.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-00-42_png.rf.22ec26046374445d050ea7efd58123b7.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-00-50_png.rf.8c98dadcabe06229b580acf737cab28e.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-00-57_png.rf.a4eb9b997b877e2f9d062c87502a6666.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-03-04_png.rf.91306847ed33906684dcd407ae03eb64.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-03-11_png.rf.af7a80b68412cbc6c6eb090a421492fd.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-03-19_png.rf.73bfa129a59e5e9be611ab6a629edca4.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-03-24_png.rf.ec192dc29036d0a2c8a23b2e5f7d3c23.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-04-05_png.rf.33a2be15931915c2d545300ff95e3b99.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-06-29_png.rf.c97ef7dc990212a929714869ec90b1ae.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-07-05_png.rf.89efecb5796e04a87b76f455b1751092.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-07-17_png.rf.4254370b54dfd5cb29c4f637f405e47a.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-07-22_png.rf.04897abf307f3825403021d3f822020c.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-20-57-00_png.rf.858e04a7719c2249fbbbbeab4a76ae23.txt
+    │   │   │       │   ├── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-21-06-37_png.rf.dbf34d76e7df189c6172ab695febf228.txt
+    │   │   │       │   └── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels/Screenshot-from-2025-12-30-21-07-24_png.rf.d50eb06996a6c60effe1bee2fce9c05b.txt
+    │   │   │       └── ./src/emergency_camera/emergency_camera/251230_detection-3/valid/labels.cache
+    │   │   ├── ./src/emergency_camera/emergency_camera/capture_yolo_data.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/collect_map_points _640.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/collect_map_points.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/collect_turtle_data.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/compare_pt 2.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/compare_pt.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_mAP50-95.png
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_mAP50.png
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_Recall.png
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/detection_results_1280p.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/detection_results_dual_cam.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/graph_accuracy.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/graph_inference_time.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/original_capture_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/original_capture_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_1_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_1_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_2_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_2_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_3_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_3_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_4_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_4_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_5_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_5_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_6_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_6_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_7_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_7_cam4.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result/result_model_8_cam2.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_result/result_model_8_cam4.jpg
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/detection_results_avg.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/graph_accuracy_avg.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/graph_inference_time_avg.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/original_sample_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/original_sample_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/result_yolo11_cam0_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/result_yolo11_cam2_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/result_yolo8_cam0_sample.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames/result_yolo8_cam2_sample.jpg
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/detection_results_avg.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/graph_accuracy_avg.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/graph_inference_time_avg.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/original_sample_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/original_sample_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/result_yolo11_cam0_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/result_yolo11_cam2_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/result_yolo8_cam0_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/result_yolo8_cam2_sample.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames2/yolo11 vs yolo8 추론시간 비교.zip
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/detection_results_avg.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/graph_accuracy_avg.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/graph_inference_time_avg.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/original_sample_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/original_sample_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/result_yolo11_cam0_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/result_yolo11_cam2_sample.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/result_yolo8_cam0_sample.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_result_avg_16frames3/result_yolo8_cam2_sample.jpg
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/detection_results_env_match.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/graph_accuracy.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/graph_inference_time.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/original_capture_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/original_capture_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_1_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_1_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_2_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_2_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_3_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_3_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_4_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_4_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_5_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_5_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_6_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_6_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_7_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_7_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_8_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_8_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_9_cam0.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_result_env_match/result_model_9_cam2.jpg
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/detection_results_env_match.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/graph_accuracy.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/graph_inference_time.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/original_capture_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/original_capture_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/result_model_4_cam0.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/result_model_4_cam2.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/result_model_9_cam0.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_result_env_match2/result_model_9_cam2.jpg
+    │   │   ├── ./src/emergency_camera/emergency_camera/comparison_speed_16frames
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/comparison_speed_16frames/average_speed_comparison.png
+    │   │   │   └── ./src/emergency_camera/emergency_camera/comparison_speed_16frames/average_speed_results.csv
+    │   │   ├── ./src/emergency_camera/emergency_camera/confidence_result
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/confidence_result/result01.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/confidence_result/result02.png
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/confidence_result/result03.png
+    │   │   │   └── ./src/emergency_camera/emergency_camera/confidence_result/result04.png
+    │   │   ├── ./src/emergency_camera/emergency_camera/config
+    │   │   ├── ./src/emergency_camera/emergency_camera/control_tower.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/control_tower(templates도 바꿔야 함).zip
+    │   │   ├── ./src/emergency_camera/emergency_camera/control_tower_v1.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/csv_data
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result1.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result2.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result3.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result4.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result5.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result6.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result7.csv
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/csv_data/result8.csv
+    │   │   │   └── ./src/emergency_camera/emergency_camera/csv_data/result9.csv
+    │   │   ├── ./src/emergency_camera/emergency_camera/demo_robot_client.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/detect_full 640.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/detect_full.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/detect.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/find_camera_index.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/get_poly_coords.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/graph_generator.ipynb
+    │   │   ├── ./src/emergency_camera/emergency_camera/graph_generator.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/homography_data
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/homography_data/cam0_20251231_160415.jpg
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/homography_data/cam0_20251231_160415.txt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/homography_data/cam4_20251231_154451.jpg
+    │   │   │   └── ./src/emergency_camera/emergency_camera/homography_data/cam4_20251231_154451.txt
+    │   │   ├── ./src/emergency_camera/emergency_camera/homography_data_640
+    │   │   ├── ./src/emergency_camera/emergency_camera/__init__.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/models
+    │   │   │   └── ./src/emergency_camera/emergency_camera/models/yolo11n.pt
+    │   │   ├── ./src/emergency_camera/emergency_camera/pose_estimate.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/pt_data
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result1.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result2.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result3.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result4.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result5.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result6.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result7.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/pt_data/result8.pt
+    │   │   │   └── ./src/emergency_camera/emergency_camera/pt_data/result9.pt
+    │   │   ├── ./src/emergency_camera/emergency_camera/__pycache__
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/__pycache__/control_tower.cpython-310.pyc
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/__pycache__/demo_robot_client.cpython-310.pyc
+    │   │   │   └── ./src/emergency_camera/emergency_camera/__pycache__/__init__.cpython-310.pyc
+    │   │   ├── ./src/emergency_camera/emergency_camera/show_dual_camera.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/show_webcam.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/subway_log.db
+    │   │   ├── ./src/emergency_camera/emergency_camera/subway_project
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/args.yaml
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/BoxF1_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/BoxP_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/BoxPR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/BoxR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/confusion_matrix_normalized.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/confusion_matrix.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/results.csv
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/results.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/train_batch0.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/train_batch1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/train_batch2.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/train_batch900.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/train_batch901.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/train_batch902.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/val_batch0_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/val_batch0_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/val_batch1_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/val_batch1_pred.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result/weights
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result/weights/last.pt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result/weights/result03.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/args.yaml
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/BoxF1_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/BoxP_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/BoxPR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/BoxR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/confusion_matrix_normalized.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/confusion_matrix.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/result05.csv
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/results.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/train_batch0.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/train_batch1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/train_batch2.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/train_batch900.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/train_batch901.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/train_batch902.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/val_batch0_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/val_batch0_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/val_batch1_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/val_batch1_pred.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result2/weights
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result2/weights/last.pt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result2/weights/result05.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/args.yaml
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/BoxF1_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/BoxP_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/BoxPR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/BoxR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/confusion_matrix_normalized.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/confusion_matrix.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/results.csv
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/results.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/train_batch0.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/train_batch1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/train_batch2.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/train_batch7220.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/train_batch7221.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/train_batch7222.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/val_batch0_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/val_batch0_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/val_batch1_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/val_batch1_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/val_batch2_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/val_batch2_pred.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result3/weights
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result3/weights/best.pt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result3/weights/last.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/args.yaml
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/BoxF1_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/BoxP_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/BoxPR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/BoxR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/confusion_matrix_normalized.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/confusion_matrix.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/results.csv
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/results.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/train_batch0.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/train_batch1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/train_batch2.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/train_batch3330.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/train_batch3331.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/train_batch3332.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/val_batch0_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/val_batch0_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/val_batch1_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/val_batch1_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/val_batch2_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/val_batch2_pred.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result4/weights
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result4/weights/best.pt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result4/weights/last.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/args.yaml
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/BoxF1_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/BoxP_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/BoxPR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/BoxR_curve.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/confusion_matrix_normalized.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/confusion_matrix.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/result06.csv
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/results.png
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/train_batch0.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/train_batch1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/train_batch2.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/train_batch6750.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/train_batch6751.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/train_batch6752.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/val_batch0_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/val_batch0_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/val_batch1_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/val_batch1_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/val_batch2_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/val_batch2_pred.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result6/weights
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result6/weights/last.pt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result6/weights/result06.pt
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/args.yaml
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/result07.csv
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/train_batch0.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/train_batch1.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/train_batch2.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/train_batch3420.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/train_batch3421.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/train_batch3422.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/val_batch0_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/val_batch0_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/val_batch1_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/val_batch1_pred.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/val_batch2_labels.jpg
+    │   │   │   │   ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/val_batch2_pred.jpg
+    │   │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result7/weights
+    │   │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result7/weights/last.pt
+    │   │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result7/weights/result07.pt
+    │   │   │   └── ./src/emergency_camera/emergency_camera/subway_project/train_result8
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/args.yaml
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/result08.csv
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/train_batch0.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/train_batch1710.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/train_batch1711.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/train_batch1712.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/train_batch1.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/train_batch2.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/val_batch0_labels.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/val_batch0_pred.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/val_batch1_labels.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/val_batch1_pred.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/val_batch2_labels.jpg
+    │   │   │       ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/val_batch2_pred.jpg
+    │   │   │       └── ./src/emergency_camera/emergency_camera/subway_project/train_result8/weights
+    │   │   │           ├── ./src/emergency_camera/emergency_camera/subway_project/train_result8/weights/last.pt
+    │   │   │           └── ./src/emergency_camera/emergency_camera/subway_project/train_result8/weights/result08.pt
+    │   │   ├── ./src/emergency_camera/emergency_camera/templates
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/templates/analytics.html
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/templates/login_center.html
+    │   │   │   ├── ./src/emergency_camera/emergency_camera/templates/signup.html
+    │   │   │   └── ./src/emergency_camera/emergency_camera/templates/sysmon.html
+    │   │   ├── ./src/emergency_camera/emergency_camera/webcam_debug_left.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/webcam_debug_right.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/webcam_tf.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/yolo11n.pt
+    │   │   ├── ./src/emergency_camera/emergency_camera/yolo_detector.py
+    │   │   ├── ./src/emergency_camera/emergency_camera/yolo_train2.ipynb
+    │   │   ├── ./src/emergency_camera/emergency_camera/yolo_train.ipynb
+    │   │   └── ./src/emergency_camera/emergency_camera/yolov8n.pt
+    │   ├── ./src/emergency_camera/package.xml
+    │   ├── ./src/emergency_camera/resource
+    │   │   └── ./src/emergency_camera/resource/emergency_camera
+    │   ├── ./src/emergency_camera/setup.cfg
+    │   ├── ./src/emergency_camera/setup.py
+    │   ├── ./src/emergency_camera/test
+    │   │   ├── ./src/emergency_camera/test/test_copyright.py
+    │   │   ├── ./src/emergency_camera/test/test_flake8.py
+    │   │   └── ./src/emergency_camera/test/test_pep257.py
+    │   └── ./src/emergency_camera/yolo11n-pose.pt
+    ├── ./src/homography_data
+    │   ├── ./src/homography_data/cam0_20251231_160415.jpg
+    │   ├── ./src/homography_data/cam0_20251231_160415.txt
+    │   ├── ./src/homography_data/cam4_20251231_154451.jpg
+    │   └── ./src/homography_data/cam4_20251231_154451.txt
+    ├── ./src/polygon_cam_left.png
+    ├── ./src/polygon_cam_right.png
+    ├── ./src/robotA_control
+    │   ├── ./src/robotA_control/LICENSE
+    │   ├── ./src/robotA_control/package.xml
+    │   ├── ./src/robotA_control/resource
+    │   │   └── ./src/robotA_control/resource/robotA_control
+    │   ├── ./src/robotA_control/robotA_control
+    │   │   ├── ./src/robotA_control/robotA_control/best3.pt
+    │   │   ├── ./src/robotA_control/robotA_control/__init__.py
+    │   │   ├── ./src/robotA_control/robotA_control/__pycache__
+    │   │   │   ├── ./src/robotA_control/robotA_control/__pycache__/following.cpython-310.pyc
+    │   │   │   ├── ./src/robotA_control/robotA_control/__pycache__/__init__.cpython-310.pyc
+    │   │   │   ├── ./src/robotA_control/robotA_control/__pycache__/nav_to_pose.cpython-310.pyc
+    │   │   │   └── ./src/robotA_control/robotA_control/__pycache__/robotA_control_with_YOLO_3.cpython-310.pyc
+    │   │   ├── ./src/robotA_control/robotA_control/robotA_control.py
+    │   │   ├── ./src/robotA_control/robotA_control/robotA_control_with_YOLO_1.py
+    │   │   ├── ./src/robotA_control/robotA_control/robotA_control_with_YOLO_2.py
+    │   │   ├── ./src/robotA_control/robotA_control/robotA_control_with_YOLO_3.py
+    │   │   ├── ./src/robotA_control/robotA_control/robotA_control_with_YOLO_modify_at_home.py
+    │   │   ├── ./src/robotA_control/robotA_control/robotA_control_with_YOLO.py
+    │   │   ├── ./src/robotA_control/robotA_control/robotB_control.py
+    │   │   └── ./src/robotA_control/robotA_control/.vscode
+    │   │       └── ./src/robotA_control/robotA_control/.vscode/colcon.env
+    │   ├── ./src/robotA_control/setup.cfg
+    │   ├── ./src/robotA_control/setup.py
+    │   ├── ./src/robotA_control/test
+    │   │   ├── ./src/robotA_control/test/test_copyright.py
+    │   │   ├── ./src/robotA_control/test/test_flake8.py
+    │   │   └── ./src/robotA_control/test/test_pep257.py
+    │   ├── ./src/robotA_control/test_alert.mp3
+    │   └── ./src/robotA_control/.vscode
+    │       └── ./src/robotA_control/.vscode/colcon.env
+    ├── ./src/subway_control
+    │   ├── ./src/subway_control/package.xml
+    │   ├── ./src/subway_control/resource
+    │   │   └── ./src/subway_control/resource/subway_control
+    │   ├── ./src/subway_control/result4.pt
+    │   ├── ./src/subway_control/result9.pt
+    │   ├── ./src/subway_control/setup.cfg
+    │   ├── ./src/subway_control/setup.py
+    │   └── ./src/subway_control/subway_control
+    │       ├── ./src/subway_control/subway_control/control_tower.py
+    │       ├── ./src/subway_control/subway_control/fake_log.py
+    │       ├── ./src/subway_control/subway_control/find_camera_index.py
+    │       ├── ./src/subway_control/subway_control/__init__.py
+    │       ├── ./src/subway_control/subway_control/__pycache__
+    │       │   ├── ./src/subway_control/subway_control/__pycache__/control_tower.cpython-310.pyc
+    │       │   └── ./src/subway_control/subway_control/__pycache__/__init__.cpython-310.pyc
+    │       ├── ./src/subway_control/subway_control/server.py
+    │       ├── ./src/subway_control/subway_control/subway_log.db
+    │       ├── ./src/subway_control/subway_control/templates
+    │       │   ├── ./src/subway_control/subway_control/templates/analytics.html
+    │       │   ├── ./src/subway_control/subway_control/templates/history.html
+    │       │   ├── ./src/subway_control/subway_control/templates/login_center.html
+    │       │   ├── ./src/subway_control/subway_control/templates/signup.html
+    │       │   └── ./src/subway_control/subway_control/templates/sysmon.html
+    │       └── ./src/subway_control/subway_control/test_scenario.py
+    ├── ./src/train_data
+    │   ├── ./src/train_data/cam2_20251231_090651.jpg
+    │   ├── ./src/train_data/cam2_20251231_090652.jpg
+    │   ├── ./src/train_data/cam2_20251231_090733.jpg
+    │   ├── ./src/train_data/cam2_20251231_090742.jpg
+    │   ├── ./src/train_data/cam2_20251231_090927.jpg
+    │   ├── ./src/train_data/cam2_20251231_090936.jpg
+    │   ├── ./src/train_data/cam2_20251231_090946.jpg
+    │   ├── ./src/train_data/cam2_20251231_091037.jpg
+    │   ├── ./src/train_data/cam2_20251231_091050.jpg
+    │   ├── ./src/train_data/cam2_20251231_091101.jpg
+    │   ├── ./src/train_data/cam2_20251231_091111.jpg
+    │   ├── ./src/train_data/cam2_20251231_091126.jpg
+    │   ├── ./src/train_data/cam2_20251231_091226.jpg
+    │   ├── ./src/train_data/cam2_20251231_091254.jpg
+    │   ├── ./src/train_data/cam2_20251231_091327.jpg
+    │   ├── ./src/train_data/cam2_20251231_091329.jpg
+    │   ├── ./src/train_data/cam2_20251231_091337.jpg
+    │   ├── ./src/train_data/cam2_20251231_091339.jpg
+    │   ├── ./src/train_data/cam2_20251231_091349.jpg
+    │   ├── ./src/train_data/cam2_20251231_091414.jpg
+    │   ├── ./src/train_data/cam2_20251231_091617.jpg
+    │   ├── ./src/train_data/cam2_20251231_091639.jpg
+    │   ├── ./src/train_data/cam2_20251231_091704.jpg
+    │   ├── ./src/train_data/cam2_20251231_091735.jpg
+    │   ├── ./src/train_data/cam2_20251231_091738.jpg
+    │   ├── ./src/train_data/cam2_20251231_091808.jpg
+    │   ├── ./src/train_data/cam2_20251231_091811.jpg
+    │   ├── ./src/train_data/cam2_20251231_091853.jpg
+    │   ├── ./src/train_data/cam2_20251231_092315.jpg
+    │   ├── ./src/train_data/cam2_20251231_092411.jpg
+    │   ├── ./src/train_data/cam2_20251231_092412.jpg
+    │   ├── ./src/train_data/cam2_20251231_092414.jpg
+    │   ├── ./src/train_data/cam2_20251231_092438.jpg
+    │   ├── ./src/train_data/cam2_20251231_092514.jpg
+    │   ├── ./src/train_data/cam2_20251231_092540.jpg
+    │   ├── ./src/train_data/cam2_20251231_092549.jpg
+    │   ├── ./src/train_data/cam2_20251231_092608.jpg
+    │   ├── ./src/train_data/cam2_20251231_100024.jpg
+    │   ├── ./src/train_data/cam2_20251231_100027.jpg
+    │   ├── ./src/train_data/cam2_20251231_100029.jpg
+    │   ├── ./src/train_data/cam2_20251231_100031.jpg
+    │   ├── ./src/train_data/cam2_20251231_100033.jpg
+    │   ├── ./src/train_data/cam2_20251231_100035.jpg
+    │   ├── ./src/train_data/cam2_20251231_100037.jpg
+    │   ├── ./src/train_data/cam2_20251231_100046.jpg
+    │   ├── ./src/train_data/cam2_20251231_100048.jpg
+    │   ├── ./src/train_data/cam2_20251231_100050.jpg
+    │   ├── ./src/train_data/cam2_20251231_100052.jpg
+    │   ├── ./src/train_data/cam2_20251231_100054.jpg
+    │   ├── ./src/train_data/cam2_20251231_100057.jpg
+    │   ├── ./src/train_data/cam2_20251231_100107.jpg
+    │   ├── ./src/train_data/cam2_20251231_100110.jpg
+    │   ├── ./src/train_data/cam2_20251231_100112.jpg
+    │   ├── ./src/train_data/cam2_20251231_100114.jpg
+    │   ├── ./src/train_data/cam2_20251231_100116.jpg
+    │   ├── ./src/train_data/cam2_20251231_100120.jpg
+    │   ├── ./src/train_data/cam2_20251231_100125.jpg
+    │   ├── ./src/train_data/img_20251231_192932_367.jpg
+    │   ├── ./src/train_data/img_20251231_192954_836.jpg
+    │   ├── ./src/train_data/img_20251231_193014_137.jpg
+    │   ├── ./src/train_data/img_20251231_193103_610.jpg
+    │   ├── ./src/train_data/img_20251231_193135_310.jpg
+    │   ├── ./src/train_data/img_20251231_193150_603.jpg
+    │   ├── ./src/train_data/img_20251231_193202_207.jpg
+    │   ├── ./src/train_data/img_20251231_193221_337.jpg
+    │   ├── ./src/train_data/img_20251231_193251_005.jpg
+    │   ├── ./src/train_data/img_20251231_193311_202.jpg
+    │   ├── ./src/train_data/img_20251231_193318_896.jpg
+    │   ├── ./src/train_data/img_20251231_193328_511.jpg
+    │   ├── ./src/train_data/img_20251231_193337_932.jpg
+    │   ├── ./src/train_data/img_20251231_193417_108.jpg
+    │   ├── ./src/train_data/img_20251231_193424_299.jpg
+    │   ├── ./src/train_data/img_20251231_193435_904.jpg
+    │   └── ./src/train_data/로봇 사진.zip
+    ├── ./src/.vscode
+    │   └── ./src/.vscode/colcon.env
+    ├── ./src/yolo
+    │   ├── ./src/yolo/package.xml
+    │   ├── ./src/yolo/resource
+    │   │   ├── ./src/yolo/resource/best1.pt
+    │   │   ├── ./src/yolo/resource/best.pt
+    │   │   └── ./src/yolo/resource/yolo
+    │   ├── ./src/yolo/setup.cfg
+    │   ├── ./src/yolo/setup.py
+    │   ├── ./src/yolo/test
+    │   │   ├── ./src/yolo/test/test_copyright.py
+    │   │   ├── ./src/yolo/test/test_flake8.py
+    │   │   └── ./src/yolo/test/test_pep257.py
+    │   └── ./src/yolo/yolo
+    │       ├── ./src/yolo/yolo/__init__.py
+    │       ├── ./src/yolo/yolo/yoloModel1.py
+    │       ├── ./src/yolo/yolo/yoloModel_modified.py
+    │       ├── ./src/yolo/yolo/yoloModel.py
+    │       ├── ./src/yolo/yolo/yoloNoUI.py
+    │       ├── ./src/yolo/yolo/yoloSJ_modified.py
+    │       └── ./src/yolo/yolo/yoloSJ.py
+    └── ./src/yolo11n-pose.pt
+
+85 directories, 1336 files
