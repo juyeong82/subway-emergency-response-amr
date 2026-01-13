@@ -5,6 +5,22 @@
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white)
 ![YOLOv11](https://img.shields.io/badge/AI-YOLOv11-00FFFF?style=flat&logo=ultralytics&logoColor=black)
 
+---
+
+## 프로젝트 데모 영상 (Demo & Screenshots)
+
+### 🎬 1. 전체 시연 동영상 (Full Scenario)
+> *환자 발생 감지부터 로봇 도착, AED 전달까지의 전체 과정*
+
+[![Full Demo](http://img.youtube.com/vi/2cp6uCiXWT4/0.jpg)](https://youtu.be/2cp6uCiXWT4)
+
+### 🖥️ 2. 관제 시스템 UI 시연 (Web Interface)
+> *Flask 기반 관제 서버의 실시간 모니터링 및 제어 화면*
+
+[![UI Demo](http://img.youtube.com/vi/WdPW3HTq1eE/0.jpg)](https://youtu.be/WdPW3HTq1eE)
+
+---
+
 ## 1. 프로젝트 개요 (Project Overview)
 
 ### 개발 목표
@@ -104,76 +120,55 @@ CCTV 화면상의 2D 좌표를 로봇이 이해할 수 있는 지도(Map) 좌표
 응급 상황 발생부터 로봇 복귀까지의 전체 시나리오 흐름도입니다.
 
 ```mermaid
-flowchart TD
-    Start([시스템 대기 중<br/>충전 스테이션]) --> Monitor[관제 시스템 모니터링]
-    Monitor --> Call{119 신고<br/>접수}
-    Call -->|신고 있음| CCTV[CCTV 영상 확인<br/>YOLO 자동 분석]
-    Call -->|신고 없음| Monitor
+flowchart LR
+    %% 전체 방향을 좌우(LR)로 변경하여 가로로 넓게 배치
+    Start([시스템 대기]) --> Monitor[관제 모니터링]
+    Monitor --> Call{119 신고}
     
-    CCTV --> YOLODetect{YOLO<br/>쓰러진 사람<br/>인식?}
+    Call -->|접수| CCTV[CCTV/YOLO 분석]
+    Call -->|없음| Monitor
     
-    YOLODetect -->|인식 성공| AutoCoord[환자 좌표 자동 설정<br/>화면 표시]
-    AutoCoord --> ReadyBtn[출동 준비 상태<br/>출동 버튼 활성화]
+    CCTV --> YOLODetect{사람 인식?}
     
-    YOLODetect -->|인식 실패<br/>사람 많음| ManualClick[관제사 직접 클릭<br/>CCTV 화면에서<br/>환자 위치 지정]
-    ManualClick --> ManualCoord[환자 좌표 수동 설정<br/>화면 표시]
-    ManualCoord --> ReadyBtn
+    YOLODetect -->|성공| AutoCoord[좌표 자동설정]
+    YOLODetect -->|실패| ManualClick[수동 좌표지정]
     
-    ReadyBtn --> DispatchBtn{관제사<br/>출동 버튼<br/>클릭}
-    DispatchBtn -->|클릭| Dispatch[로봇 출동 시작<br/>5초 이내]
-    DispatchBtn -->|대기| ReadyBtn
+    AutoCoord --> ReadyBtn[출동 대기]
+    ManualClick --> ManualCoord[좌표 수동설정] --> ReadyBtn
     
-    Dispatch --> RobotA_Start[로봇 A: 환자 좌표로 출발<br/>AED 적재 확인]
-    Dispatch --> RobotB_Start[로봇 B: 계단 입구로 출발]
+    ReadyBtn --> DispatchBtn{출동 버튼}
+    DispatchBtn -->|Click| Dispatch[로봇 출동]
     
-    RobotA_Start --> RobotA_Nav[Navigation2<br/>자율 주행<br/>장애물 회피]
-    RobotA_Nav --> RobotA_Arrive[환자 도착<br/>1분 30초 이내<br/>±30cm 오차]
-    RobotA_Arrive --> RobotA_AED[AED 전달 자세<br/>180도 회전<br/>음성 안내 시작]
+    Dispatch --> RobotA_Start[로봇A: 환자 이동]
+    Dispatch --> RobotB_Start[로봇B: 입구 이동]
     
-    %% === 수정된 AED 사용 확인 로직 ===
-    RobotA_AED --> RobotA_Timer[2분 타이머 시작<br/>관제 화면 표시]
-    RobotA_Timer --> RobotA_Check{AED 전달 확인?}
-    RobotA_Check -->|관제사<br/>수동 확인 버튼| RobotA_Control[통제 모드 전환<br/>환자 주변 2m 반경<br/>안전 거리 확보]
-    RobotA_Check -->|2분 자동 경과| RobotA_Control
-    RobotA_Check -->|대기 중| RobotA_Timer
+    subgraph RobotA [🚑 Robot A Action]
+        direction TB
+        RobotA_Start --> RobotA_Nav[자율 주행]
+        RobotA_Nav --> RobotA_Arrive[환자 도착]
+        RobotA_Arrive --> RobotA_AED[AED 전달/안내]
+        RobotA_AED --> RobotA_Check{전달 확인?}
+        RobotA_Check -->|확인| RobotA_Control[안전 통제 모드]
+    end
     
-    RobotA_Control --> RobotA_Monitor[LiDAR로 접근자 감지<br/>비켜주세요 방송<br/>영상 관제실 전송]
-    
-    RobotB_Start --> RobotB_Nav[Navigation2<br/>자율 주행]
-    RobotB_Nav --> RobotB_Arrive[계단 입구 도착<br/>경광등 ON]
-    RobotB_Arrive --> RobotB_Wait[대기 모드<br/>구급대 감지 대기]
-    
-    RobotB_Wait --> RobotB_Trigger{구급대<br/>도착 감지?}
-    RobotB_Trigger -->|관제실 START_GUIDE 명령| RobotB_Guide[구급대 유도 시작<br/>저를 따라오세요 방송]
-    RobotB_Trigger -->|대기 중| RobotB_Wait
-    
-    RobotB_Guide --> RobotB_Lead[환자 좌표까지<br/>Navigation2 선행 주행<br/>최단 경로]
-    RobotB_Lead --> RobotB_PatientArrive[환자 위치 도착<br/>유도 완료]
-    
-    RobotA_Monitor --> Complete{구급대<br/>환자 인계<br/>완료?}
+    subgraph RobotB [🚓 Robot B Action]
+        direction TB
+        RobotB_Start --> RobotB_Nav[자율 주행]
+        RobotB_Nav --> RobotB_Arrive[입구 대기]
+        RobotB_Arrive --> RobotB_Trigger{구급대 도착?}
+        RobotB_Trigger -->|감지| RobotB_Guide[구급대 유도]
+        RobotB_Guide --> RobotB_PatientArrive[환자 인계]
+    end
+
+    RobotA_Control --> Complete{상황 종료?}
     RobotB_PatientArrive --> Complete
     
-    Complete -->|인계 완료| Log[이벤트 로그 기록<br/>발생 시각, 위치<br/>로봇 동작 이력<br/>처치 이력 DB 저장]
-    Complete -->|대기| RobotA_Monitor
-    
-    Log --> Return[복귀 명령<br/>충전 스테이션으로]
-    
-    Return --> BatteryCheck{배터리<br/>20% 이상?}
-    BatteryCheck -->|정상| Monitor
-    BatteryCheck -->|20% 이하| Charging[충전 스테이션<br/>자율 도킹]
-    Charging --> Monitor
+    Complete -->|종료| Log[로그 저장] --> Return[복귀 및 충전]
     
     style Start fill:#e1f5ff
     style Call fill:#fff4e1
-    style YOLODetect fill:#ffe1e1
     style DispatchBtn fill:#ffcccc
     style Complete fill:#e1ffe1
-    style Monitor fill:#f0f0f0
-    style RobotA_Control fill:#ffe1f0
-    style RobotB_Lead fill:#f0e1ff
-    style RobotA_Timer fill:#fff9e1
-    style AutoCoord fill:#e1ffe1
-    style ManualCoord fill:#ffffcc
 ```
 
 ---
@@ -276,21 +271,7 @@ python3 src/robotA_control/robotA_control/robotA_control_with_YOLO_3.py
 
 ---
 
-## 6. 프로젝트 시연 (Demo & Screenshots)
-
-### 🎬 1. 전체 시연 동영상 (Full Scenario)
-> *환자 발생 감지부터 로봇 도착, AED 전달까지의 전체 과정*
-
-[![Full Demo](http://img.youtube.com/vi/2cp6uCiXWT4/0.jpg)](https://youtu.be/2cp6uCiXWT4)
-
-### 🖥️ 2. 관제 시스템 UI 시연 (Web Interface)
-> *Flask 기반 관제 서버의 실시간 모니터링 및 제어 화면*
-
-[![UI Demo](http://img.youtube.com/vi/WdPW3HTq1eE/0.jpg)](https://youtu.be/WdPW3HTq1eE)
-
----
-
-## 7. 트러블슈팅 (Troubleshooting)
+## 6. 트러블슈팅 (Troubleshooting)
 
 * **네트워크 연결 실패**: `ping <ROBOT_IP>` 확인 및 `ROS_DOMAIN_ID` 일치 여부 점검.
 * **맵 로드 에러**: `nav2.launch.py` 실행 시 `map.yaml`의 절대 경로가 올바른지 확인.
