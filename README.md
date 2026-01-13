@@ -241,7 +241,7 @@ ros2 launch turtlebot4_viz view_robot.launch.py namespace:=/robot3
 ros2 launch turtlebot4_navigation nav2.launch.py namespace:=/robot3
 ```
 
-### STEP 1: 관제 서버 실행 (Server)
+### STEP 1: 관제 서버 실행 (Server & CCTV YOLO)
 
 Flask 기반 웹 UI 구동 (포트 5000).
 
@@ -251,7 +251,7 @@ ros2 run subway_control server
 
 ```
 
-### STEP 2: Vision 시스템 실행 (CCTV)
+### STEP 2: Vision 시스템 실행 (robot YOLO)
 
 YOLO 추론 및 좌표 변환 노드. 이 노드가 실행되어야 `/target` 토픽이 발행됨.
 
