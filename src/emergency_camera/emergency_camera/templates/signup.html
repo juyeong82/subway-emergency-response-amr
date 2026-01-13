@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>관리자 회원가입</title>
+    <style>
+        body { background-color: #1a1a1a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; }
+        .login-box { background: #2b2b2b; padding: 40px; border-radius: 10px; text-align: center; width: 300px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid #444; }
+        h1 { margin-bottom: 30px; color: #ff9800; font-size: 22px; }
+        input { width: 90%; padding: 12px; margin-bottom: 15px; background: #444; border: 1px solid #555; color: white; border-radius: 4px; box-sizing: border-box; }
+        input:focus { outline: none; border-color: #ff9800; }
+        button { width: 100%; padding: 12px; background: #ff9800; border: none; color: white; font-weight: bold; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        button:hover { background: #f57c00; }
+        .links { margin-top: 20px; font-size: 14px; }
+        .links a { color: #aaa; text-decoration: none; }
+        .links a:hover { color: white; }
+        .flash-msg { color: #ff5252; margin-bottom: 15px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>📝 새 관리자 등록</h1>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash-msg">{{ messages[0] }}</div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="/signup">
+            <input type="text" name="username" placeholder="새 아이디" required>
+            <input type="password" name="password" placeholder="새 비밀번호" required>
+            <button type="submit">등록하기</button>
+        </form>
+
+        <div class="links">
+            <a href="/login">⬅️ 로그인 화면으로 돌아가기</a>
+        </div>
+    </div>
+</body>
+</html>

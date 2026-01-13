@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['AED', 'Crowd', 'Patient', 'Responder', 'Robot']
+
+roboflow:
+  workspace: ahyun
+  project: 251230_detection
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ahyun/251230_detection/dataset/2

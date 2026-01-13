@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지하철 스마트 안전 관제 | Smart Safety Control</title>
+    <style>
+        /* [1] 전체 레이아웃 (화면 크기 고정, 스크롤 방지) */
+        body { 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            font-family: 'Pretendard', sans-serif; 
+            margin: 0; 
+            padding: 15px; 
+            height: 100vh; 
+            box-sizing: border-box;
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden; 
+        }
+
+        /* [2] 상단 헤더 */
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 3px solid #ff9800; 
+            padding-bottom: 15px; 
+            margin-bottom: 15px; 
+            flex-shrink: 0; 
+        }
+        .header h1 { margin: 0; font-size: 24px; color: #fff; letter-spacing: 0.5px; } 
+        .header h1 span { color: #ff9800; } 
+        
+        .user-info { font-size: 14px; color: #aaa; }
+        
+        /* 버튼 스타일 (로그아웃, 분석 등) */
+        .btn-link {
+            text-decoration: none; 
+            padding: 8px 16px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            margin-left: 10px;
+            font-size: 14px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-analytics { background: #2196F3; color: white; }
+        .btn-analytics:hover { background: #1976D2; }
+        .btn-logout { background: #d32f2f; color: white; }
+        .btn-logout:hover { background: #b71c1c; }
+
+        /* [3] 영상 모니터링 영역 (2분할) */
+        .video-container { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; 
+            margin-bottom: 15px; 
+            flex: 1; /* 남은 공간 차지 */
+            min-height: 0; /* 넘침 방지 */
+        }
+        
+        .panel { 
+            background: #1e1e1e; 
+            padding: 10px; 
+            border-radius: 8px; 
+            border: 1px solid #333; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden; 
+        }
+        
+        .panel-title { 
+            font-size: 16px; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            color: #e0e0e0; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-shrink: 0; 
+        }
+        
+        /* [중요] 카메라 상태 배지 스타일 */
+        .badge { 
+            padding: 2px 8px; 
+            font-size: 11px; 
+            border-radius: 3px; 
+            font-weight: bold; 
+            text-transform: uppercase;
+        }
+        .badge-live { 
+            background: #d32f2f; 
+            color: white; 
+            animation: blink 2s infinite; 
+        }
+        .badge-offline { 
+            background: #555; 
+            color: #aaa; 
+            border: 1px solid #777;
+        }
+        @keyframes blink { 50% { opacity: 0.5; } }
+
+        .video-box { 
+            width: 100%;      
+            aspect-ratio: 16 / 9;    
+            background: #000; 
+            border-radius: 4px; 
+            overflow: hidden; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border: 1px solid #444; 
+            position: relative; 
+            margin: 0 auto;   
+        }
+
+        .video-box img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: fill;    
+            cursor: crosshair; 
+            display: block;        /* 하단 미세한 여백 제거 */
+        }
+
+        .cam-overlay { 
+            position: absolute; 
+            top: 10px; left: 10px; 
+            background: rgba(0,0,0,0.6); 
+            color: #00e676; 
+            padding: 4px 8px; 
+            font-size: 12px; 
+            border-radius: 4px; 
+        }
+
+        /* [4] 하단 정보 영역 (좌: 로봇상태, 우: 로그) */
+        .bottom-container { 
+            display: grid; 
+            grid-template-columns: 2.5fr 1fr; 
+            gap: 15px; 
+            height: 35%; /* 높이 고정 */
+            min-height: 0; 
+        }
+
+        /* 좌측 로봇 패널 */
+        .status-panel { 
+            overflow: hidden; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        .status-content { 
+            overflow: auto; 
+            flex: 1; 
+        }
+        
+        table { width: 100%; border-collapse: collapse; text-align: center; font-size: 14px; }
+        th { background: #2c2c2c; padding: 10px; color: #ff9800; border-bottom: 2px solid #444; position: sticky; top:0; }
+        td { padding: 10px; border-bottom: 1px solid #333; vertical-align: middle; }
+        
+        /* [NEW] 작업 종료 버튼 스타일 */
+        .btn-end-task { 
+            width: 100%; margin-top: 10px; 
+            background: #ff5722; color: white; 
+            padding: 12px; font-size: 15px; font-weight: bold; 
+            border: none; border-radius: 4px; cursor: pointer; transition: 0.3s;
+            flex-shrink: 0;
+        }
+        .btn-end-task:hover { background: #e64a19; }
+
+        /* 우측 로그 패널 */
+        .log-container { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px; 
+            height: 100%; 
+            min-height: 0; 
+        }
+        .log-box { 
+            flex: 1; 
+            background: #1a1a1a; 
+            border: 1px solid #333; 
+            border-radius: 6px; 
+            padding: 10px; 
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden; 
+            min-height: 0; 
+        }
+        .log-title { 
+            font-size: 13px; 
+            font-weight: bold; 
+            margin-bottom: 5px; 
+            border-bottom: 1px solid #444; 
+            padding-bottom: 4px; 
+            flex-shrink: 0; 
+        }
+        .log-content { 
+            flex: 1; 
+            overflow-y: auto; 
+            font-size: 12px; 
+            color: #bbb; 
+            font-family: 'Consolas', monospace; 
+            padding-right: 5px; 
+        }
+        .log-item { display: flex; border-bottom: 1px solid #2a2a2a; padding: 2px 0; align-items: center; }
+        .time-stamp { color: #ff9800; margin-right: 8px; font-weight: bold; min-width: 70px; font-size: 11px; }
+        .log-msg { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #eee; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚇 지하철 스마트 <span>안전 관제 시스템</span></h1>
+        <div class="user-info">
+            안전관리자: <strong>{{ username }}</strong>
+            <a href="/analytics" class="btn-link btn-analytics">📊 데이터 분석</a>
+            <a href="/logout" class="btn-link btn-logout">로그아웃</a>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="panel">
+            <div class="panel-title">
+                <span>📷 CAM 1 : 승강장 안전 구역 (Robot 3)</span>
+                <span id="badge-cam1" class="badge badge-offline">CONNECTING...</span>
+            </div>
+            <div class="video-box">
+                <div class="cam-overlay">REC ●</div>
+                <img id="cam1-view" src="/video/1">
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-title">
+                <span>📷 CAM 2 : 계단 진입로 (Robot 5)</span>
+                <span id="badge-cam2" class="badge badge-offline">CONNECTING...</span>
+            </div>
+            <div class="video-box">
+                <div class="cam-overlay">REC ●</div>
+                <img id="cam2-view" src="/video/2">
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        
+        <div class="panel status-panel">
+            <div class="panel-title">⚙️ 안전 순찰 로봇 운용 현황</div>
+            <div class="status-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>배터리</th><th>위치 (X, Y)</th><th>운용 상태</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color:#4dabf7; font-weight:bold;">ROBOT 3</td>
+                            <td id="r3-bat">--%</td>
+                            <td id="r3-pos">-,-</td>
+                            <td id="r3-stat">연결중</td>
+                        </tr>
+                        <tr>
+                            <td style="color:#ff6b6b; font-weight:bold;">ROBOT 5</td>
+                            <td id="r5-bat">--%</td>
+                            <td id="r5-pos">-,-</td>
+                            <td id="r5-stat">연결중</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-end-task" onclick="sendTaskEnd()">🚨 작업 종료 및 복귀 (END TASK)</button>
+            <div style="padding:15px; text-align:center; color:#777; font-size:12px;">
+                💡 화면의 목표 지점을 클릭하면 해당 로봇에게 출동 명령을 전송합니다.
+            </div>
+        </div>
+
+        <div class="log-container">
+            <div class="log-box" style="border-top: 3px solid #d32f2f;">
+                <div class="log-title" style="color:#ff8a80;">🚨 안전 사고 / 응급 알림</div>
+                <div class="log-content" id="emer-logs"></div>
+            </div>
+            <div class="log-box" style="border-top: 3px solid #2e7d32;">
+                <div class="log-title" style="color:#a5d6a7;">💾 시스템 제어 이력</div>
+                <div class="log-content" id="sys-logs"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // 1초마다 백엔드 상태 조회
+        setInterval(() => { 
+            fetch('/api/status').then(r=>r.json()).then(d => { 
+                updateRobot('r3', d.robots.robot3); 
+                updateRobot('r5', d.robots.robot5); 
+                renderLogs('emer-logs', d.logs.emergency); 
+                renderLogs('sys-logs', d.logs.system);
+                
+                // 카메라 상태 배지 업데이트
+                updateCamBadge('badge-cam1', d.cam_status['1']);
+                updateCamBadge('badge-cam2', d.cam_status['2']);
+            }); 
+        }, 1000);
+
+        // 카메라 배지 변경 함수
+        function updateCamBadge(elementId, isLive) {
+            const el = document.getElementById(elementId);
+            if (isLive) {
+                el.innerText = "LIVE";
+                el.className = "badge badge-live";
+            } else {
+                el.innerText = "OFFLINE";
+                el.className = "badge badge-offline";
+            }
+        }
+
+        // 로봇 상태 표시 함수
+        function updateRobot(p, i) { 
+            if(i.bat == -1){
+                document.getElementById(p+'-bat').innerText = "확인불가"; 
+                document.getElementById(p+'-bat').style.color = "#888";
+            } else {
+                document.getElementById(p+'-bat').innerText = i.bat + '%'; 
+                document.getElementById(p+'-bat').style.color = i.bat < 20 ? "#ff5252" : "#e0e0e0";
+            }
+            document.getElementById(p+'-pos').innerText = i.x + ', ' + i.y; 
+            document.getElementById(p+'-stat').innerText = i.status;
+            
+            const s = document.getElementById(p+'-stat'); 
+            if(i.status.includes("이동") || i.status.includes("작업")) s.style.color = "#69f0ae"; 
+            else s.style.color = "#e0e0e0";
+        }
+
+        // 로그 렌더링 함수
+        function renderLogs(id, logs) { 
+            const container = document.getElementById(id);
+            container.innerHTML = logs.map(l => {
+                const timePart = l[2].split(' ')[1].split('.')[0];
+                return `<div class="log-item">
+                            <span class="time-stamp">[${timePart}]</span>
+                            <span class="log-msg">${l[1]}</span>
+                        </div>`;
+            }).join(''); 
+        }
+
+        // 작업 종료 버튼 핸들러
+        function sendTaskEnd() {
+            if(confirm("정말로 모든 작업을 종료하고 로봇을 복귀시키겠습니까?")) {
+                fetch('/api/task_end', { method: 'POST' })
+                .then(res => res.json())
+                .then(data => alert("✅ 작업 종료 명령을 전송했습니다. 로봇이 복귀합니다."));
+            }
+        }
+
+        // 클릭 좌표 전송 함수 (제어 명령)
+        // 클릭 좌표 전송 함수 (비율 보정 추가)
+        function setupClick(elementId, camId) { 
+            const imgEl = document.getElementById(elementId);
+            
+            imgEl.addEventListener('click', e => { 
+                // 1. 현재 화면에 표시된 이미지의 크기와 위치
+                const rect = e.target.getBoundingClientRect(); 
+                
+                // 2. 클릭한 위치 (화면 기준 픽셀)
+                const clientX = e.clientX - rect.left;
+                const clientY = e.clientY - rect.top;
+
+                // 3. 비율 계산 (원본 해상도 1280x720 기준)
+                // naturalWidth가 로드되지 않았을 경우를 대비해 기본값 1280 설정
+                const originalW = imgEl.naturalWidth || 1280;
+                const originalH = imgEl.naturalHeight || 720;
+                
+                const scaleX = originalW / rect.width;
+                const scaleY = originalH / rect.height;
+
+                // 4. 실제 전송할 좌표 계산
+                const realX = Math.round(clientX * scaleX);
+                const realY = Math.round(clientY * scaleY);
+                
+                console.log(`[CLICK] 화면좌표:(${clientX},${clientY}) -> 원본변환:(${realX},${realY})`);
+
+                // 5. 서버 전송
+                fetch('/api/click', {
+                    method:'POST', 
+                    headers:{'Content-Type':'application/json'}, 
+                    body:JSON.stringify({id: camId, x: realX, y: realY})
+                }); 
+            }); 
+        }
+
+        // 함수 호출
+        setupClick('cam1-view', 1); 
+        setupClick('cam2-view', 2);
+    </script>
+</body>
+</html>
